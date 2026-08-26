@@ -1,22 +1,28 @@
 tier,category,item,blocks,status,owner,notes
-1,Legal,State and city of operation,"Everything - all legal and SEO rules are state-specific",not started,Tino,
-1,Legal,License number + classification codes + board + expiration,"Header on every page; determines what we may advertise",not started,Tino,Photo of the license is easiest
-1,Legal,Electrical license - held or subcontracted?,"Service list; misdemeanor exposure in CA/TX",not started,Tino,HARD BLOCKER
-1,Legal,Plumbing license - held or subcontracted?,"Service list; misdemeanor exposure in CA/TX",not started,Tino,HARD BLOCKER
-1,Legal,Clarify what 'certified' refers to,"Copy - regulated term of art in some states",not started,Tino,
+0,Legal,Prior employment agreements collected (non-compete / non-solicit / NDA),"Which agencies the commercial page may target",not started,Tino,MOST URGENT - Georgia blue-pencils overbroad covenants
+0,Legal,Georgia employment attorney reviews those agreements,"Commercial page copy and outreach targets",not started,You + attorney,O.C.G.A. 13-8-50 et seq. - see docs/01 section 5
+0,Legal,List of agencies/cities/counties/developers/GCs he had material contact with,"Attorney's non-solicit analysis",not started,Tino,Not for marketing - for the lawyer
+0,Legal,Did he hold equity or profit participation at a former employer?,"Raises presumptive restraint to 5 years",not started,Tino,
+0,Credentials,Notarized experience letters requested from every former employer,"Utility Manager/Foreman application cannot be filed without them",not started,Tino,Rules 121-2-.08(3) and 121-2-.09(3). Decays with time - ask NOW
+1,Legal,Georgia Chapter 41 contractor license - held? class? number?,"Entire residential service list - offering IS contracting in GA",not started,Tino,O.C.G.A. 43-41-2(3). Photo of license is easiest
+1,Legal,Georgia Chapter 14 trade license - electrical/plumbing/utility?,"Service list wording",not started,Tino,Answer is probably no; that's fine and expected
+1,Legal,Clarify what 'certified' refers to,"Copy - misdemeanor risk with $1000 min fine",not started,Tino,43-41-12(a)(2) + FBPA 10-1-393(b)(5)
+1,Legal,Georgia city or county where the office is located,"Occupation tax certificate, zoning, service-area SEO, DBE certifier",not started,Tino,MARTA certifies Fulton/DeKalb/Clayton; GDOT elsewhere
 1,Legal,LLC formed? Exact entity name?,"Domain, email, footer, NAP consistency",not started,Tino,Must match license name exactly
 1,Legal,EIN,"Commercial track, SAM.gov registration",not started,Tino,
-1,Legal,General liability insurance - limits + certificate,"Can't print 'insured'; GC prequalification",not started,Tino,$1M/$2M is the common floor
-1,Legal,Workers comp status or documented exemption,"GC prequalification",not started,Tino,
+1,Legal,Georgia sales and use tax number (Form CRF-002),"Mandatory for ALL Georgia contractors",not started,Tino,Must file ST-3 MONTHLY even with zero activity
+1,Legal,General liability insurance - limits + certificate,"Licensure condition; GC prequalification",not started,Tino,GA board: $300K Residential-Basic / $500K others. Buy $500K
+1,Legal,Workers comp policy or filed Form WC-10 exemption,"Licensure condition; GC prequalification",not started,Tino,LLC members COUNT toward the 3-employee threshold
 1,Legal,Commercial auto insurance,"GC prequalification",not started,Tino,
-1,Identity,Business name decision,"Domain, logo, email, Google profile, everything",not started,You + Tino,Check domain + LLC + social handles together
+1,Legal,Local occupation tax certificate,"Legal operation",not started,Tino,Only ONE needed - where the office is (O.C.G.A. 48-13-6)
+1,Identity,Business name decision,"Domain, logo, email, Google profile, everything",not started,You + Tino,Check domain + GA LLC + social handles together
 1,Contact,"Honest answer: how fast can he answer a call?","Entire CTA architecture",not started,Tino,See docs/02 - do not accept aspirational answers
 2,Contact,Business phone number,"Header, footer, sticky mobile bar",not started,Tino,
 2,Contact,Can the number receive SMS?,"Text CTA",not started,Tino,
 2,Contact,WhatsApp number,"WhatsApp CTA",not started,Tino,Cheap differentiator - almost no US contractor sites have it
 2,Contact,Business email at the domain,"Contact page, forms",not started,You,
 2,Contact,Address OR service-area-only decision,"Google Business Profile type, footer NAP",not started,Tino,Home-based businesses can run service-area-only
-2,Contact,Service radius + named cities and neighborhoods,"Service area section, local SEO",not started,Tino,Name them specifically
+2,Contact,Service radius + named Georgia cities and neighborhoods,"Service area section, local SEO",not started,Tino,Name them specifically
 2,Contact,Business hours + emergency availability,"Footer, GBP",not started,Tino,
 2,Identity,Logo,"Header, favicon, capability statement",not started,TBD,May need to commission
 2,Identity,Existing online profiles to claim (Google/FB/Angi/Yelp),"Avoid duplicate listings",not started,Tino,Claiming beats creating
@@ -35,43 +41,51 @@ tier,category,item,blocks,status,owner,notes
 2,Photos,Photos of Tino working - face visible,"Trust - only 4 of 21 sites have this",not started,Tino,
 2,Photos,Portrait for About page,"About page",not started,Tino,
 2,Photos,Detail close-ups (tile/trim/panel),"Proof of finish quality",not started,Tino,
-2,Photos,Per-photo provenance (who shot / whose property / employer work),"LEGAL GATE - build blocks unreleased images",not started,Tino,See docs/01 section 4
+2,Photos,Per-photo provenance (who shot / whose property / employer work),"LEGAL GATE - build blocks unreleased images",not started,Tino,Georgia: Cabaniss means accidental publication is still liability
 2,Photos,Signed photo releases for client properties,"LEGAL GATE",not started,Tino,Collect at job closeout
 2,Content,His story - voice memo,"About page - 2nd most visited page",not started,Tino,Voice memo preferred over writing
 2,Content,Total years of experience,"Trust strip",not started,Tino,
-2,Content,Warranty term and coverage,"Trust strip - only 7 of 21 sites state one",not started,Tino,
+2,Content,Warranty term and coverage,"Trust strip + GA Rule 553-7-.01 compliance",not started,Tino,Georgia REQUIRES offering one on residential over $2500
 2,Content,Estimating and communication process,"Process page - answers top 3 homeowner complaints",not started,Tino,A redacted sample estimate would be ideal
-2,Content,Permit jurisdictions he pulls in,"Process page - differentiator vs unlicensed competitors",not started,Tino,
+2,Content,Georgia permit jurisdictions he pulls in,"Process page - 43-41-14 makes this a verifiable claim",not started,Tino,
 2,Content,Existing testimonials/reviews + permission to quote,"Reviews section",not started,Tino,
 2,Content,Bilingual decision - full mirror or single Spanish page,"i18n scope",not started,You + Tino,Recommend starting with one page
+2,Legal,Contract package drafted (warranty + cancellation notice + photo clause),"Legal operation",not started,You + attorney,3-day notice: if not given the cancel window NEVER closes
 2,Infra,Domain registered,"Deploy",not started,You,
-2,Infra,Render static site + custom domain,"Deploy",not started,You,Hobby = 5GB/mo bandwidth cap
-2,Infra,Image CDN (Cloudflare Images recommended),"Prevents bandwidth overage taking site offline",not started,You,Set up BEFORE photos arrive
+2,Infra,Render static site + custom domain + PAYMENT METHOD ON FILE,"Deploy",not started,You,Stay on Hobby. Card avoids spin-down; overage only $0.15/GB
+2,Infra,Image CDN (Cloudflare Images recommended),"Page speed / Core Web Vitals",not started,You,Set up before photos arrive. Perf reason not cost
 2,Infra,Form backend (Web3Forms) tested end-to-end from a phone,"Lead capture",not started,You,1 in 6 contractor forms fail silently
 2,Infra,Google Business Profile created and optimized,"Probably the single biggest lead source",not started,You + Tino,Do this before the site is finished
 2,Infra,Analytics,"Measurement",not started,You,
+3,Credentials,Level 1A Erosion & Sediment Control (blue card),"Georgia land-disturbing work incl. trenching",not started,Tino,Cheapest + fastest credential - do this first. O.C.G.A. 12-7-19
+3,Credentials,12-hour utility safety training (trenching + confined space),"Prerequisite for Foreman and Manager",not started,Tino,Rule 121-2-.10(1)
+3,Credentials,Utility Foreman certificate,"Satisfies on-site presence rule; employable immediately",not started,Tino,1 yr experience + course + letters. NO EXAM
+3,Credentials,Utility Manager certificate,"Required for the LLC's utility contractor license",not started,Tino,Out-of-state equivalent experience accepted. Oral exam available
+3,Credentials,Utility Contractor license for the LLC,"Advertising sewer/storm/water main services AT ALL",not started,Tino,Needs written safety policy. Can qualify only ONE business
+3,Credentials,Written safety policy for the LLC,"Utility Contractor license application",not started,You + Tino,Rule 121-2-.07(1)(b) - five required elements
+3,Credentials,Georgia Chapter 41 license application + exam,"All residential service pages",not started,Tino,Document supervision/PM experience in those terms for GC tier
 3,Commercial,Full pipe-network resume (employers/years/systems/sizes/agencies/role),"Capability statement backbone",not started,Tino,Prose only - no photo permission needed
-3,Commercial,Clarify: designed pipe networks or built to others' designs?,"Accuracy of the commercial pitch",not started,Tino,'Engineer' is a protected title in many states
+3,Commercial,Clarify: designed pipe networks or built to others' designs?,"Accuracy of the commercial pitch",not started,Tino,'Engineer' protected in GA; Level II design cert not open to him
 3,Commercial,OSHA 10/30 card,"Commercial credentials",not started,Tino,
-3,Commercial,Competent person - trenching/excavation,"Municipal work requirement",not started,Tino,No OSHA card exists; needs designation letter
-3,Commercial,Confined space entry certification,"Municipal work",not started,Tino,
-3,Commercial,Traffic control / flagger certification,"Municipal work",not started,Tino,
-3,Commercial,NASSCO PACP/MACP/LACP,"Often required by municipalities for CCTV deliverables",not started,Tino,~$1270 / 3yr - worth acquiring if missing
-3,Commercial,Welding / backflow / erosion control certs,"Commercial credentials",not started,Tino,
+3,Commercial,NASSCO PACP/MACP/LACP,"Often required by Georgia municipalities for CCTV",not started,Tino,~$1270 / 3yr - worth acquiring if missing
+3,Commercial,Welding / backflow certs,"Commercial credentials",not started,Tino,
 3,Commercial,Equipment owned or accessible,"Commercial page - proof of capability",not started,Tino,
 3,Commercial,Self-performance percentage,"Commercial page - civil-side credibility",not started,Tino,
-3,Commercial,Surety relationship / bonding capacity letter,"GC prequalification",not started,Tino,
-3,Commercial,Bookkeeping system + CPA relationship,"Prequalification above ~$250K",not started,Tino,Not urgent - McGough approves under $250K without financials
+3,Commercial,Surety relationship / bonding capacity letter,"GC prequalification; Georgia public work",not started,Tino,
+3,Commercial,Bookkeeping system + CPA relationship,"GDOT prequalification above $2M; GC prequal above ~$250K",not started,Tino,Not urgent at his scale
 3,Commercial,Commercial references (supervisors/agencies/GCs),"Commercial page - named attribution",not started,Tino,Get titles and organizations
-3,Commercial,Ownership documentation (51%+),"MBE certification",not started,Tino,
-3,Commercial,MBE certification interest decision,"Commercial positioning",not started,You + Tino,Federal presumptions removed 2023-2026 - see docs/07
-3,Commercial,HUBZone address check,"Free - 10% price evaluation preference",not started,You,Needs his address; unaffected by federal turmoil
-3,Commercial,SAM.gov registration (UEI + CAGE),"Capability statement corporate data",not started,You + Tino,
-3,Commercial,Written employer clearance for pipe project photos,"LEGAL GATE - default is prose only",not started,Tino,Assume unusable until cleared
 3,Commercial,Capability statement PDF drafted,"Commercial download - nobody in 21-site sample had one",not started,You,
+3,BidAccess,GDOT Subcontractor registration,"Prime contracts up to $2M - lightest high-value registration",not started,You + Tino,Rule 672-5-.11. File 10+ days before any bid opening
+3,BidAccess,Team Georgia Marketplace registration + NIGP codes,"State bid notifications",not started,You,Free
+3,BidAccess,Metro Atlanta water/sewer authority vendor registrations,"His specialty's actual buyers",not started,You + Tino,Atlanta DWM / DeKalb / Cobb / Gwinnett DWR / Clayton. CHECK NON-SOLICIT FIRST
+3,BidAccess,SAM.gov registration (UEI + CAGE),"Capability statement corporate data",not started,You + Tino,
+3,BidAccess,HUBZone address check,"Free - 10% price evaluation preference",not started,You,Race-neutral and unaffected by the federal turmoil
+3,BidAccess,DBE certification via GDOT or MARTA,"Public work preference (goals currently suspended)",not started,Tino,Now needs a Personal Narrative + net worth statement
+3,BidAccess,City of Atlanta EBO/HABE + SBO certification,"Atlanta contract goals",not started,Tino,ATLSuppliers.com then atlantaga.gob2g.com. Durability uncertain
+3,BidAccess,Ownership documentation (51%+),"Any certification",not started,Tino,
 4,Ongoing,Steady drip of new project photos,"GBP recency, freshness",not started,Tino,4 photos per job habit - see photo-guide
 4,Ongoing,Review requests at every job closeout,"Reviews - 74% check 2+ sites",not started,Tino,Pair with the photo release ask
 4,Ongoing,Owner responses to all reviews,"89% of consumers expect them",not started,Tino,
 4,Ongoing,Short jobsite videos,"Differentiator - almost nobody at this scale does video",not started,Tino,
 4,Ongoing,Common customer questions verbatim,"Free FAQ content",not started,Tino,
-4,Ongoing,Awards / manufacturer certs / supplier relationships,"Trust content",not started,Tino,
+4,Ongoing,Renewal calendar set up,"Avoiding lapsed credentials",not started,You,See docs/02a. GDOT sends no reminders; GA license lapse = revocation

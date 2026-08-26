@@ -20,41 +20,129 @@ respuestas son de una sola palabra, y si algo no lo sabes, déjalo en blanco y l
 
 ## 1. La parte legal (por favor esta primero)
 
-No es por metiches — hay estados que te multan si esto sale mal en un sitio web, y en uno es hasta
-delito menor. Así que queremos hacerlo bien.
+Investigamos las reglas de Georgia específicamente. Algunas tienen dientes de verdad — anunciar en
+Georgia un servicio para el que no tienes licencia es delito menor con multa mínima de $1,000 — así que
+preferimos hacerlo bien en lugar de adivinar.
 
-- ¿En qué **estado y ciudad** trabajas?
-- ¿Cuál es tu **número de licencia de contratista**, y qué dice exactamente la licencia? Si nos puedes
-  mandar una **foto de la licencia**, es lo más fácil. Necesitamos los códigos de clasificación (cosas
-  como "B" o "C-10") porque esos nos dicen qué podemos anunciar.
-- ¿Qué junta o agencia la emitió, y cuándo vence?
+- ¿En qué **ciudad o condado de Georgia** está basado tu negocio?
+- **¿Tienes licencia de contratista de Georgia?** Si sí: ¿de qué clase (Residential-Basic,
+  Residential-Light Commercial, General Contractor, o GC Limited Tier), cuál es el número, y cuándo
+  vence? Una **foto de la licencia** es la forma más fácil de mandarlo.
+- Si todavía no la tienes, no hay problema — es normal cuando estás empezando, y ya tenemos mapeado
+  cómo sacarla. Sí cambia lo que el sitio puede decir al principio, nada más necesitamos saberlo.
 - **Cuando dices "certificado," ¿a qué te refieres exactamente?** ¿Qué certificación, y de quién? En
-  algunos estados esa palabra tiene un significado legal específico, así que queremos usarla bien.
+  Georgia esa palabra tiene peso legal, así que queremos nombrar la credencial de verdad en lugar de
+  nada más decir "certificado."
+- ¿Tienes **número de impuesto de ventas y uso de Georgia** (sales and use tax)? (Georgia exige que
+  todo contratista lo tenga y declare cada mes, incluso en meses sin actividad. A muchos les agarra
+  desprevenidos.)
 
-### Lo más importante: electricidad y plomería
+### Electricidad y plomería — esta ya está decidida
 
-Sabemos que puedes hacer ese trabajo. La pregunta es otra: **¿tienes licencia aparte de electricista
-o de plomero?**
+Sabemos que puedes hacer ese trabajo y no lo estamos dudando. Pero la ley de Georgia es
+inusualmente clara aquí, así que en realidad no es una pregunta: **un contratista general o residencial
+de Georgia tiene prohibido hacer trabajo eléctrico o de plomería él mismo.** Tiene que ir a un
+contratista con licencia de ese oficio, no importa lo chico que sea el trabajo. Y en Georgia,
+*anunciar* que haces electricidad o plomería es la violación en sí — aunque nunca lo toques.
 
-En la mayoría de los estados esas licencias son separadas de la de contratista general, y anunciar
-esos servicios sin la licencia puede ser delito menor aunque sepas hacer el trabajo perfectamente.
-Entonces:
+Entonces lo único que necesitamos saber es:
 
-- ¿Tienes licencia de electricista? ¿De plomero?
-- Si no, ¿estás de acuerdo con que el sitio diga que *coordinas subcontratistas con licencia* de
-  electricidad y plomería como parte de los trabajos grandes? (Es cierto, es legal en todos lados, y
-  de todos modos le dice a la gente que tú manejas el proyecto completo.)
+- **¿Tienes licencia de electricista o plomero de Georgia?** (Master Plumber, Electrical Contractor
+  Clase I o II.) Si sí, eso cambia las cosas y nos encantaría saberlo.
+- Si no — y esa es la respuesta normal — vamos a escribir el sitio así: *"Coordinamos toda la
+  electricidad y plomería con contratistas de oficio licenciados en Georgia."* Es exacto, es legal, y
+  de todos modos le dice a la gente que tú manejas el proyecto de principio a fin.
 
-Dinos la verdad nada más — eso cambia cómo lo escribimos, no si podemos hacer el sitio.
+Nada de esto limita el negocio. Nada más cambia seis palabras en una página.
+
+### Ahora la buena noticia: tu experiencia en tubería vale una licencia de Georgia
+
+Esto fue lo mejor que encontramos. Georgia da licencia aparte para trabajo subterráneo de servicios —
+drenaje sanitario, drenaje pluvial, líneas de agua, cualquier cosa a cinco pies o más de profundidad —
+y **tu experiencia es exactamente para lo que esa licencia está hecha.** Muy pocos contratistas que
+hacen tablaroca y azulejo también la tienen.
+
+El camino es: un curso de seguridad de 12 horas → **Utility Foreman** (un año de experiencia, **sin
+examen**) → **Utility Manager** (con examen) → una **licencia de Utility Contractor** para tu LLC. Se
+basa más en experiencia que en escuela.
+
+Dos cosas que necesitamos de ti sobre esto:
+
+- **¿Ya tienes alguna licencia o certificado de utility de Georgia?**
+- **¿Puedes empezar a pedir cartas de experiencia notariadas a tus patrones anteriores — esta semana?**
+
+Lo segundo es lo más urgente de toda esta lista, así que tiene su propia sección abajo.
 
 ### La empresa
 
 - ¿Ya está formada la **LLC**? ¿Cuál es el nombre exacto?
-- ¿Ese nombre coincide exactamente con el de tu licencia? (Hasta las diferencias chiquitas importan.)
+- ¿Ese nombre coincide exactamente con el de tu licencia? (Hasta las diferencias chiquitas causan
+  problemas.)
 - ¿Ya tienes EIN?
 - **Seguro:** ¿tienes seguro de responsabilidad civil (general liability)? ¿De cuánto? ¿Workers' comp,
   o estás exento como dueño? ¿Seguro de vehículo comercial? ¿Quién es tu agente?
-- ¿Tienes **fianza** (bond)? ¿Con quién, y de cuánto?
+  - Aviso: la junta de licencias de Georgia exige mínimo **$300,000** de responsabilidad civil para
+    Residential-Basic y **$500,000** para las otras clases. Si de todos modos vas a buscar póliza,
+    compra la de $500,000 — te cubre para cualquier clase de licencia y así no tienes que volver a
+    buscar después.
+- ¿Tienes **certificado de occupation tax** de tu ciudad o condado? (Georgia no tiene licencia de
+  negocio estatal, pero tu jurisdicción local probablemente quiere uno. Nada más el de donde está tu
+  oficina — no de cada condado donde trabajas.)
+- ¿Tienes **fianza** (bond)? ¿Con quién, y de cuánto? (Georgia no la exige a nivel estatal, pero el
+  trabajo público sí.)
+
+---
+
+## 1b. Dos cosas urgentes — por favor empieza estas antes que nada
+
+Las dos se hacen más difíciles mientras más esperes, y ninguna depende del resto del cuestionario.
+
+### A. Busca todo lo que firmaste con tus patrones anteriores
+
+Necesitamos ver cualquier **acuerdo de no competencia** (non-compete), **acuerdo de no solicitación**
+(non-solicitation), o **acuerdo de confidencialidad** (NDA) que hayas firmado — contratos de trabajo,
+cartas de oferta, acuses de recibo del manual del empleado, lo que sea.
+
+Te explicamos por qué importa, con honestidad: Georgia es uno de los estados más estrictos en hacer
+cumplir estos acuerdos. Y a diferencia de muchos lugares, **un juez en Georgia puede reescribir un
+acuerdo que sea demasiado amplio en lugar de tirarlo a la basura** — así que la idea de "eso nunca lo
+podrían hacer valer" no aplica aquí.
+
+La preocupación específica es una cláusula sobre no buscar a los clientes de tu patrón anterior. En tu
+caso, esos "clientes" serían las ciudades, condados, autoridades de agua y drenaje, desarrolladores y
+contratistas generales con los que tratabas — que son exactamente la gente que queremos que el sitio
+atraiga. Si existe una cláusula así y es válida, podría limitar legalmente a quién podemos dirigirnos.
+
+- ¿Puedes buscar y mandarnos esos documentos?
+- Por separado: **¿con qué agencias, ciudades, condados, desarrolladores y contratistas generales
+  trataste directamente** en tus trabajos anteriores? No para el sitio web — para el abogado, para que
+  nos diga qué está fuera de límites.
+- ¿Alguna vez tuviste **acciones, participación o reparto de utilidades** en un patrón anterior? (Eso
+  cambia las reglas.)
+
+Queremos que un abogado laboral de Georgia lea esto antes de que el sitio salga al público. Mejor una
+cuenta chica del abogado ahora que una carta de un patrón anterior después.
+
+### B. Pide cartas de experiencia notariadas a tus patrones anteriores — ya
+
+Para sacar la licencia de utility de Georgia, el estado exige **cartas notariadas en papel con el
+logotipo de cada empresa** confirmando tu experiencia. No un currículum — cartas de ellos.
+
+Cada carta necesita:
+
+- Papel con logotipo de la empresa, y notariada
+- Tus fechas de empleo
+- Tu puesto y título
+- Qué tipo de trabajo de utility era — drenaje sanitario, drenaje pluvial, líneas de agua
+- **Específicamente que los sistemas estaban a por lo menos cinco pies bajo tierra** (eso es
+  exactamente lo que el estado busca)
+
+**Por qué ahora:** los departamentos de recursos humanos se reorganizan, los supervisores se jubilan,
+las empresas se venden, los archivos se depuran. Cada mes que pasa lo hace más difícil. Y francamente
+es más fácil pedirle un favor a un ex jefe *antes* de que andes compitiendo con ellos.
+
+**Sin esas cartas, la solicitud de la licencia de utility ni se puede presentar.** Así que esto es lo
+más valioso que podrías hacer esta semana.
 
 ---
 
@@ -239,13 +327,16 @@ tiempo con esta — puede venir después del resto.
 
 ### Certificaciones — mándanos foto de cualquier tarjeta que tengas
 
+- **Level 1A de control de erosión y sedimentos de Georgia** (la "tarjeta azul")? — *Georgia la exige a
+  cualquiera que haga trabajo que altere la tierra, y hacer trincheras cuenta. Es la credencial más
+  barata y rápida de tu lista, y te sugerimos sacarla primero si no la tienes.*
 - ¿OSHA 10 u OSHA 30?
 - ¿Persona competente para excavación y trincheras?
 - ¿Espacios confinados?
 - ¿Control de tráfico o abanderamiento (flagger)?
-- ¿NASSCO PACP/MACP/LACP (la de inspección de tubería con cámara)? — *las ciudades muchas veces la
-  exigen, así que vale la pena sacarla si no la tienes*
-- ¿Soldadura? ¿Backflow? ¿Control de erosión?
+- ¿NASSCO PACP/MACP/LACP (la de inspección de tubería con cámara)? — *las ciudades de Georgia muchas
+  veces la exigen para trabajo con cámara, así que vale la pena sacarla si no la tienes*
+- ¿Soldadura? ¿Backflow?
 - Cualquier otra, aunque esté vencida
 
 ### Equipo y capacidad
@@ -261,17 +352,44 @@ tiempo con esta — puede venir después del resto.
 - ¿Referencias del lado comercial — supervisores anteriores, contactos en ciudades, contratistas
   generales?
 
+### Entrar a las listas de licitación de Georgia — algo más fácil de lo esperado
+
+Encontramos un atajo útil. Para licitar trabajo del Departamento de Transporte de Georgia como
+contratista principal en obras de **hasta $2 millones**, nada más necesitas estar **registrado como
+Subcontractor** con GDOT — no prequalificado por completo. Ese proceso es mucho más ligero, y $2
+millones está muy por encima de lo que licitarías al empezar. Probablemente es el mejor registro que
+puedes hacer.
+
+También vale registrarse en: Team Georgia Marketplace (el portal de licitaciones del estado, gratis), y
+directamente con las autoridades de agua y drenaje del área de Atlanta — Atlanta Watershed Management,
+DeKalb Watershed, Cobb County Water, Gwinnett DWR, Clayton County Water Authority.
+
+*Una advertencia: hay que revisar tu acuerdo de no solicitación anterior antes de acercarnos a
+cualquier agencia con la que ya hayas trabajado. Ve la sección 1b.*
+
 ### Un aviso sobre la certificación de empresa minoritaria
 
 Puede que hayas oído que por ser hispano tienes acceso automático a contratos de gobierno reservados.
-**Eso cambió.** Los tribunales federales tumbaron la presunción racial automática en 2023, y la SBA la
-quitó formalmente a partir de septiembre de 2026. Lo mismo pasó con el programa DBE del Departamento
-de Transporte.
+**Eso cambió.** Los tribunales federales tumbaron la presunción racial automática en 2023, la SBA la
+quitó formalmente a partir de septiembre de 2026, y el Departamento de Transporte hizo lo mismo con su
+programa DBE en octubre de 2025. Ahora mismo las metas de contratos DBE están **suspendidas** mientras
+vuelven a revisar a todos los que ya estaban certificados.
 
-Todavía hay opciones reales — la certificación MBE del sector privado por medio de NMSDC, programas
-MBE estatales y municipales, y HUBZone si tu dirección califica (esa es gratis de revisar y no tiene
-nada que ver con el origen étnico). Lo vamos a investigar bien. Nada más queríamos que lo escucharas
-de nosotros y no de alguien vendiéndote información vieja.
+Todavía hay opciones reales en Georgia:
+
+- **DBE** por medio de GDOT, o de MARTA si estás en los condados de Fulton, DeKalb o Clayton. Es
+  gratis, pero ahora requiere una declaración personal escrita en lugar de nada más marcar una casilla.
+- **La Ciudad de Atlanta** tiene una categoría de Hispanic American Business Enterprise (HABE) y pone
+  metas de participación en los contratos de la ciudad.
+- **NMSDC**, certificación MBE del sector privado, por medio del Georgia Minority Supplier Development
+  Council.
+- **HUBZone** — se basa puramente en tu dirección, no tiene nada que ver con el origen étnico, y es
+  gratis de consultar.
+
+Lo vamos a investigar bien. Nada más queríamos que lo escucharas de nosotros y no de alguien
+vendiéndote información vieja. Nuestra opinión honesta: las credenciales en las que vale la pena
+construir son las que se basan en habilidad y tamaño — la licencia de utility, la tarjeta azul, el
+registro con GDOT — porque esas no dependen de cómo salgan los casos en los tribunales.
 
 Preguntas: ¿eres dueño del 51% o más del negocio? ¿Te interesa buscar la certificación?
 
@@ -288,13 +406,20 @@ Preguntas: ¿eres dueño del 51% o más del negocio? ¿Te interesa buscar la cer
 
 ---
 
-## Si nada más haces una cosa esta semana
+## Si nada más haces unas pocas cosas esta semana
 
-1. **Foto de tu licencia de contratista** (frente y atrás)
-2. **Dinos si tienes licencia de electricidad y plomería**, o si las subcontratas
-3. **El nombre** que quieres para el negocio
-4. **Fotos de la ampliación de tu casa, el carport, y el área de afuera con la estufa** — antes y
-   después si las tienes
-5. **Un mensaje de voz** sobre cómo entraste a esto y cómo eran los trabajos de redes de tubería
+En este orden:
 
-Con eso ya podemos empezar a construir.
+1. **Escríbele a tus patrones anteriores pidiendo las cartas de experiencia notariadas** (sección 1b,
+   parte B). Es lo que más tarda, se hace más difícil cada mes, y la licencia de utility depende de eso.
+2. **Busca lo que firmaste con patrones anteriores** — non-compete, non-solicit, NDA (sección 1b, parte
+   A). Esto podría afectar a quién nos podemos dirigir, así que lo necesitamos antes de escribir esa
+   parte.
+3. **Foto de tu licencia de contratista de Georgia** si la tienes — o nada más dinos que todavía no.
+4. **El nombre** que quieres para el negocio.
+5. **Fotos de la ampliación de tu casa, el carport, y el área de afuera con la estufa** — antes y
+   después si las tienes.
+6. **Un mensaje de voz** sobre cómo entraste a esto y cómo eran los trabajos de redes de tubería.
+
+Los puntos 1 y 2 son los que nada más tú puedes empezar, y en los dos el reloj ya está corriendo. Todo
+lo demás puede esperar una semana sin costar nada.

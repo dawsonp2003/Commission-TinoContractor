@@ -32,7 +32,7 @@ Bullet the real work. Specific beats impressive.
 
 > Note: this field is for *filtering and describing the project*. It is not the same as what we
 > advertise as a service — see
-> [`../docs/01-legal-and-licensing.md`](../docs/01-legal-and-licensing.md#1-blocker-we-may-not-be-able-to-advertise-electrical-or-plumbing).
+> [`../docs/01-legal-and-licensing.md`](../docs/01-legal-and-licensing.md#1-electrical-and-plumbing-georgia-settles-it-outright).
 
 ## The story
 

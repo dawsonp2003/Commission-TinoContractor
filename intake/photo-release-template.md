@@ -6,7 +6,7 @@
 **Why this exists:** performing work on someone's home does not grant permission to publish photos of
 it. Under US copyright law Tino owns the photos he takes, but that's separate from the homeowner's
 interest in their own property and privacy. A signed release closes the gap. Background in
-[`../docs/01-legal-and-licensing.md`](../docs/01-legal-and-licensing.md#4-photos-the-prior-employer-problem-is-the-sharp-edge).
+[`../docs/01-legal-and-licensing.md`](../docs/01-legal-and-licensing.md#6-photos-privacy-and-prior-employer-work).
 
 **When to ask:** at project closeout, while the client is happy with the work. Pair it with the review
 request — one conversation, two asks. Coming back a year later is much harder.
