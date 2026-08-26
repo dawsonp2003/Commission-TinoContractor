@@ -78,6 +78,78 @@ normal and negotiable.
 
 ---
 
+## Georgia public bid access
+
+Ordered by how quickly it produces opportunity.
+
+### GDOT — the best entry point, and the bar is lower than it looks
+
+Ga. Comp. R. & Regs. Chapter 672-5 sets two tiers, and the threshold is the useful part:
+
+> **Rule 672-5-.04(2)** — anyone bidding GDOT work as a prime on a contract **≤ $2,000,000** need only
+> be **registered as a Subcontractor** under Rule 672-5-.11. A full **Certificate of Qualification** is
+> required only to bid as prime **above $2,000,000**.
+
+Rule 672-5-.01(s) confirms it: a "Subcontractor" is registered "to sublet work from a Contractor **or
+to perform any contract less than or equal to Two Million Dollars ($2,000,000) as a prime
+contractor**."
+
+So subcontractor registration — far lighter than full prequalification — opens prime contracts up to
+$2M. That is well above anything Tino would bid initially. **This is the single highest-value
+registration on the list.**
+
+Mechanics: applications must be filed **at least 10 days before any bid opening**, are submitted under
+oath, and must be resubmitted at least every two years (or when 25%+ of assets are sold). Financial
+statement requirements scale with adjusted net worth — at **≤$750,000** a compiled, reviewed, or
+audited statement is acceptable; above that, reviewed or audited only. GDOT notes the certificate is
+generally valid two years and that **GDOT sends no renewal reminder**; lapsed contractors can't bid.
+
+One helpful quirk from GDOT's own guidance: "**Work Class Codes are for information only. Once
+Qualified or Registered, you may perform any work you desire as long as you have the current capacity,
+equipment to perform for the work, and can be bonded for the work.**"
+
+Also relevant: **§ 43-41-17(d)** exempts GDOT-qualified contractors from Chapter 41 licensure for
+roads, bridges, paving, airport runways, railroads, and "services incidental thereto."
+
+### Team Georgia Marketplace and the Georgia Procurement Registry
+
+**Team Georgia Marketplace (TGM)** is DOAS's e-procurement portal and the mandatory first step for
+state work. Register as a Supplier or Sourcing Bidder, then select **NIGP commodity codes** — matching
+codes generate automatic bid-notification emails. Free. Help desk 404-657-6000. DOAS also runs free
+supplier orientation sessions.
+
+The **Georgia Procurement Registry** is a component of TGM and lists solicitations from **state and
+local** entities. It's the best single place to find county and municipal work statewide, free to
+search.
+
+### Water and sewer authorities — his actual target list
+
+Register directly with each. These are the metro Atlanta agencies whose work matches his specialty:
+
+- Atlanta Department of Watershed Management
+- DeKalb County Watershed Management
+- Cobb County Water System
+- Gwinnett County Department of Water Resources
+- Clayton County Water Authority
+
+Each has its own vendor registration, prequalification, and bonding requirements, which differ — verify
+individually.
+
+> **Check the non-solicit first.** If a former employer's customer non-solicitation clause covers
+> agencies he had material contact with, approaching them could breach it. Georgia enforces these and
+> requires no geographic limit for them to be valid. See
+> [01-legal-and-licensing.md §5](01-legal-and-licensing.md#5-urgent--his-old-employment-agreements-may-restrict-who-the-site-can-market-to).
+> This is exactly the scenario that clause is written for, and it needs a lawyer's read before outreach.
+
+### Bonding on public work
+
+Georgia requires no statewide contractor surety bond, but public work triggers payment and performance
+bonds under Georgia's Little Miller Act (O.C.G.A. Title 13, Ch. 10), and § 43-14-12 lets municipal and
+county inspection authorities require bonds for local code enforcement. GDOT and most water and sewer
+authorities will want bonding capacity.
+
+---
+
 ## Minority certifications — read this before promising anything
 
 **The legal ground shifted and most advice online is now wrong.**
@@ -97,41 +169,71 @@ normal and negotiable.
 > build an evidentiary case under the new framework, and the rules are actively in flux. Anyone
 > telling him otherwise is working from pre-2023 information.
 
-What still works:
+GDOT's own DBE page states it plainly: "the previously existing race and sex based presumption of
+disadvantage in the DBE Program regulation **has been removed**… any individual seeking to demonstrate
+that he or she is a 'socially and economically disadvantaged individual' will be required to make an
+**individualized showing of disadvantage, without regard to race or sex**."
+
+### What's available in Georgia
 
 | Program | Issuer | Cost | Notes |
 | --- | --- | --- | --- |
-| **NMSDC MBE** | Regional council | ~$350–650/yr | Private-sector. 1,750+ corporate members including most of the Fortune 500. Requires a site visit. **Unaffected by the federal litigation.** |
-| **State / city MBE** | State or municipal agency | Varies | Separate from NMSDC. Many public-works goals still apply. Some states have reciprocity. |
-| **DBE** | State DOT via Unified Certification Program | $0 | 49 CFR Part 26. Personal net worth cap $2,047,000 effective May 9, 2024; retirement accounts and primary residence excluded. |
-| **HUBZone** | SBA | $0 | Purely geographic — principal office in a HUBZone, 35% of employees residing in one. Carries a 10% price evaluation preference. Check the [SBA map](https://www.sba.gov/certifications/) first — this one is worth checking early because it's free and has nothing to do with the contested presumptions. |
+| **DBE** | **Georgia UCP** — MARTA certifies firms in **Fulton, DeKalb, and Clayton**; **GDOT** certifies everywhere else | $0 | One certification honored by all Georgia recipients. Now requires a substantive **Personal Narrative** plus a Personal Net Worth statement. |
+| **City of Atlanta EBO** — incl. **HABE** (Hispanic American Business Enterprise) | City of Atlanta Office of Contract Compliance | Varies | City Code Ch. 2, Art. X. Requires Atlanta-region location, a commercially useful function (no pass-throughs), and 3 years of federal returns. Register at ATLSuppliers.com, then apply at atlantaga.gob2g.com. |
+| **City of Atlanta SBO/SBE** | Same | Varies | Size-based rather than ethnicity-based — **more durable**, see below. |
+| **MARTA SBE** | MARTA | $0 | Separate from its DBE role. |
+| **NMSDC MBE** | Georgia Minority Supplier Development Council | ~$350–650/yr | Private-sector. Requires a site visit. **Unaffected by the federal litigation.** |
+| **State of Georgia** | DOAS | — | **Georgia has no state MBE/WBE program of its own.** DOAS directs suppliers to get third-party certification and upload it to their Team Georgia Marketplace profile. **No statewide minority set-asides** — the value is visibility, not preference. |
+| **HUBZone** | SBA | $0 | Purely geographic — 10% price evaluation preference. Free to check his address on the [SBA map](https://www.sba.gov/certifications/), and it has nothing to do with the contested presumptions. |
 
-**Recommended path: NMSDC MBE plus state/local MBE.** It targets corporate primes and municipal
-goals without depending on contested federal presumptions. Check the HUBZone map for his address
-since it costs nothing to look.
+### Two honest caveats
 
-On the site, this is a badge row on the `/commercial` page and a line item on the capability
+**DBE's near-term value is reduced.** USDOT directed recipients to **temporarily suspend DBE contract
+goals** and stop counting DBE participation while UCPs re-evaluate their existing certified firms. All
+current DBEs must resubmit. GDOT is accepting narratives on a rolling basis. So a fresh DBE may not
+produce contracting advantage immediately even if granted.
+
+**Atlanta's ethnicity-linked categories may not be durable.** HABE and the rest of the EBO program are
+municipal ordinance programs, not federal regulations, so they weren't directly touched by the USDOT
+rule or the SBA rule. But they are race-conscious programs of exactly the type the *Ultima* and
+*Mid-America* reasoning targets, and I found no Georgia litigation resolving their status. **Worth
+getting, not worth building the business model on.**
+
+> **The durable credentials are the race-neutral ones — and they're the ones he can actually earn:**
+> **SBE** status, **Utility Manager / Utility Contractor** licensure, **GDOT registration**, and the
+> **Level 1A** blue card. Those are what get him on bid lists in 2027 regardless of how the
+> constitutional litigation resolves. See
+> [02a-georgia-credentials-roadmap.md](02a-georgia-credentials-roadmap.md).
+
+On the site, certifications are a badge row on the `/commercial` page and a line item on the capability
 statement — see how [DECA](https://www.decaimprovements.com/) uses MBE certification as a procurement
-asset rather than a values statement.
+asset rather than a values statement. And per
+[01-legal-and-licensing.md §4](01-legal-and-licensing.md#4-certified-and-licensed-are-the-two-riskiest-words-on-the-site),
+"Hispanic-owned" as a statement of ownership is fine; implying it is a certification or a federal
+contracting advantage is now inaccurate and FBPA-exposed.
 
 ---
 
 ## Municipal and utility pipe work
 
-### Licensing
+### Georgia licensing — required, and achievable
 
-Often a **separate license from general contracting**, and state-specific:
+Georgia licenses underground utility work separately from general contracting, and the trigger has **no
+dollar threshold**: § 43-14-2(17) defines a "utility system" as any system **at least five feet
+underground** installed by trenching, "including… water supply systems, and sanitary sewerage and
+drainage systems." § 43-14-8.4(c) additionally requires a certified utility manager or foreman
+**present at the job site**.
 
-- **Florida** requires a Certified Underground Utility and Excavation Contractor license
-  ([CILB 5-N](https://www.myfloridalicense.com/CheckListDetail.asp?XACT_DEFN_ID=18301&clientCode=0610&xactCode=1042))
-  — four years of experience or education equivalent, a state exam, liability insurance, and workers'
-  comp within 30 days.
-- **Georgia** has Utility Manager and Utility Foreman licenses requiring 12 hours of approved safety
-  training.
+The path — Utility Foreman (no exam) → Utility Manager (exam) → Utility Contractor license for the LLC
+— is laid out in full in
+[02a-georgia-credentials-roadmap.md](02a-georgia-credentials-roadmap.md). Two things to carry into this
+doc:
 
-We need his state before we can say what applies. This may be a genuine opportunity: if he qualifies
-for an underground utility license on experience, it's a credential very few multi-trade contractors
-hold.
+1. **He cannot advertise sewer, storm drain, or water main services until the license is in hand** —
+   § 43-14-2(14) makes offering the service the violation. Until then the commercial page describes
+   experience and role, which is biography rather than an offer.
+2. **The notarized employer experience letters are the binding constraint**, not the experience itself.
+   Get them now, while former supervisors and HR records are still reachable.
 
 ### Certifications that matter
 
@@ -143,7 +245,10 @@ Collect the cards for all of these that he has:
   workers are in an excavation. The deliverable is training plus a written designation letter.
 - **Confined space entry**
 - **Traffic control / flagger**
-- **NPDES or state erosion control**
+- **Georgia Level 1A Erosion & Sediment Control** (the "blue card") — O.C.G.A. § 12-7-19. Required for
+  anyone involved in land-disturbing activity in Georgia, which trenching is. Cheapest and fastest
+  credential on his list; details in
+  [02a-georgia-credentials-roadmap.md](02a-georgia-credentials-roadmap.md#1-level-1a-erosion--sediment-control--start-here).
 - **[NASSCO PACP/MACP/LACP](https://nassco.org/education-and-training/pacp-lacp-macp/)** — $1,270
   initial, valid 3 years, frequently *required* by municipalities for CCTV pipe inspection
   deliverables. If he doesn't have this and wants municipal work, it's a concrete, cheap thing to go
@@ -151,15 +256,12 @@ Collect the cards for all of these that he has:
 - **811 one-call** compliance — federal, non-negotiable
 - Welding and backflow certifications, if held
 
-### Getting onto bid lists
-
-Register directly on city, county, utility, and water-district vendor portals. Watch state DOT
-letting pages, school and special district procurement, and public plan rooms; aggregators like
-BidNet and BidPrime cover the rest. Prequalification is agency-specific and usually precedes bidding.
+### Federal registration
 
 SAM.gov is only required for *federal* contracts — but federally funded local projects carry federal
 clauses, so registering is cheap insurance and it's how he gets the UEI and CAGE code for the
-capability statement.
+capability statement. Georgia-specific bid access is covered
+[above](#georgia-public-bid-access).
 
 ---
 
@@ -191,7 +293,7 @@ opposite, so confirm with Tino which he's actually worked under before publishin
 2. Trust row: license classifications, insurance limits, bonding capacity, safety certifications
 3. Core competencies, in agency language
 4. Past performance — described in prose where photos are encumbered by prior employers (see
-   [01-legal-and-licensing.md](01-legal-and-licensing.md#4-photos-the-prior-employer-problem-is-the-sharp-edge))
+   [01-legal-and-licensing.md](01-legal-and-licensing.md#6-photos-privacy-and-prior-employer-work))
 5. Self-performance statement and equipment list
 6. Certifications and MBE badges
 7. Named references with titles and organizations
