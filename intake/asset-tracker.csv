@@ -1,0 +1,77 @@
+tier,category,item,blocks,status,owner,notes
+1,Legal,State and city of operation,"Everything - all legal and SEO rules are state-specific",not started,Tino,
+1,Legal,License number + classification codes + board + expiration,"Header on every page; determines what we may advertise",not started,Tino,Photo of the license is easiest
+1,Legal,Electrical license - held or subcontracted?,"Service list; misdemeanor exposure in CA/TX",not started,Tino,HARD BLOCKER
+1,Legal,Plumbing license - held or subcontracted?,"Service list; misdemeanor exposure in CA/TX",not started,Tino,HARD BLOCKER
+1,Legal,Clarify what 'certified' refers to,"Copy - regulated term of art in some states",not started,Tino,
+1,Legal,LLC formed? Exact entity name?,"Domain, email, footer, NAP consistency",not started,Tino,Must match license name exactly
+1,Legal,EIN,"Commercial track, SAM.gov registration",not started,Tino,
+1,Legal,General liability insurance - limits + certificate,"Can't print 'insured'; GC prequalification",not started,Tino,$1M/$2M is the common floor
+1,Legal,Workers comp status or documented exemption,"GC prequalification",not started,Tino,
+1,Legal,Commercial auto insurance,"GC prequalification",not started,Tino,
+1,Identity,Business name decision,"Domain, logo, email, Google profile, everything",not started,You + Tino,Check domain + LLC + social handles together
+1,Contact,"Honest answer: how fast can he answer a call?","Entire CTA architecture",not started,Tino,See docs/02 - do not accept aspirational answers
+2,Contact,Business phone number,"Header, footer, sticky mobile bar",not started,Tino,
+2,Contact,Can the number receive SMS?,"Text CTA",not started,Tino,
+2,Contact,WhatsApp number,"WhatsApp CTA",not started,Tino,Cheap differentiator - almost no US contractor sites have it
+2,Contact,Business email at the domain,"Contact page, forms",not started,You,
+2,Contact,Address OR service-area-only decision,"Google Business Profile type, footer NAP",not started,Tino,Home-based businesses can run service-area-only
+2,Contact,Service radius + named cities and neighborhoods,"Service area section, local SEO",not started,Tino,Name them specifically
+2,Contact,Business hours + emergency availability,"Footer, GBP",not started,Tino,
+2,Identity,Logo,"Header, favicon, capability statement",not started,TBD,May need to commission
+2,Identity,Existing online profiles to claim (Google/FB/Angi/Yelp),"Avoid duplicate listings",not started,Tino,Claiming beats creating
+2,Identity,Preferred payment methods,"Trust content",not started,Tino,
+2,Strategy,Top 2-3 services he wants to be hired for,"GBP primary category - strongest local ranking lever",not started,Tino,Answer by revenue not aspiration
+2,Strategy,Minimum and maximum job size,"Homepage positioning, lead filtering",not started,Tino,
+2,Strategy,Jobs he does NOT want,"Lead filtering",not started,Tino,
+2,Strategy,Price ranges per service (3 tiers ideal),"Pricing pages - biggest differentiator found",not started,Tino,Only 2 of 21 sites do this
+2,Projects,Project 1 - house addition (doubled sq ft),"Flagship portfolio piece",not started,Tino,Own property - no permission needed
+2,Projects,Project 2 - 4-car carport,"Portfolio",not started,Tino,Own property - no permission needed
+2,Projects,Project 3 - outdoor kitchen (roof + sink + stove),"Portfolio",not started,Tino,Own property; proves multi-trade in one job
+2,Projects,Project 4 - interior renovations,"Portfolio, before/after material",not started,Tino,Own property
+2,Projects,Projects 5-12,"Gallery depth",not started,Tino,Target 8-12 total for launch
+2,Photos,20-40 real project photos,"Entire portfolio",not started,Tino,No stock photos ever
+2,Photos,Before/after pairs shot from same position,"Comparison sliders",not started,Tino,Highest-value single ask
+2,Photos,Photos of Tino working - face visible,"Trust - only 4 of 21 sites have this",not started,Tino,
+2,Photos,Portrait for About page,"About page",not started,Tino,
+2,Photos,Detail close-ups (tile/trim/panel),"Proof of finish quality",not started,Tino,
+2,Photos,Per-photo provenance (who shot / whose property / employer work),"LEGAL GATE - build blocks unreleased images",not started,Tino,See docs/01 section 4
+2,Photos,Signed photo releases for client properties,"LEGAL GATE",not started,Tino,Collect at job closeout
+2,Content,His story - voice memo,"About page - 2nd most visited page",not started,Tino,Voice memo preferred over writing
+2,Content,Total years of experience,"Trust strip",not started,Tino,
+2,Content,Warranty term and coverage,"Trust strip - only 7 of 21 sites state one",not started,Tino,
+2,Content,Estimating and communication process,"Process page - answers top 3 homeowner complaints",not started,Tino,A redacted sample estimate would be ideal
+2,Content,Permit jurisdictions he pulls in,"Process page - differentiator vs unlicensed competitors",not started,Tino,
+2,Content,Existing testimonials/reviews + permission to quote,"Reviews section",not started,Tino,
+2,Content,Bilingual decision - full mirror or single Spanish page,"i18n scope",not started,You + Tino,Recommend starting with one page
+2,Infra,Domain registered,"Deploy",not started,You,
+2,Infra,Render static site + custom domain,"Deploy",not started,You,Hobby = 5GB/mo bandwidth cap
+2,Infra,Image CDN (Cloudflare Images recommended),"Prevents bandwidth overage taking site offline",not started,You,Set up BEFORE photos arrive
+2,Infra,Form backend (Web3Forms) tested end-to-end from a phone,"Lead capture",not started,You,1 in 6 contractor forms fail silently
+2,Infra,Google Business Profile created and optimized,"Probably the single biggest lead source",not started,You + Tino,Do this before the site is finished
+2,Infra,Analytics,"Measurement",not started,You,
+3,Commercial,Full pipe-network resume (employers/years/systems/sizes/agencies/role),"Capability statement backbone",not started,Tino,Prose only - no photo permission needed
+3,Commercial,Clarify: designed pipe networks or built to others' designs?,"Accuracy of the commercial pitch",not started,Tino,'Engineer' is a protected title in many states
+3,Commercial,OSHA 10/30 card,"Commercial credentials",not started,Tino,
+3,Commercial,Competent person - trenching/excavation,"Municipal work requirement",not started,Tino,No OSHA card exists; needs designation letter
+3,Commercial,Confined space entry certification,"Municipal work",not started,Tino,
+3,Commercial,Traffic control / flagger certification,"Municipal work",not started,Tino,
+3,Commercial,NASSCO PACP/MACP/LACP,"Often required by municipalities for CCTV deliverables",not started,Tino,~$1270 / 3yr - worth acquiring if missing
+3,Commercial,Welding / backflow / erosion control certs,"Commercial credentials",not started,Tino,
+3,Commercial,Equipment owned or accessible,"Commercial page - proof of capability",not started,Tino,
+3,Commercial,Self-performance percentage,"Commercial page - civil-side credibility",not started,Tino,
+3,Commercial,Surety relationship / bonding capacity letter,"GC prequalification",not started,Tino,
+3,Commercial,Bookkeeping system + CPA relationship,"Prequalification above ~$250K",not started,Tino,Not urgent - McGough approves under $250K without financials
+3,Commercial,Commercial references (supervisors/agencies/GCs),"Commercial page - named attribution",not started,Tino,Get titles and organizations
+3,Commercial,Ownership documentation (51%+),"MBE certification",not started,Tino,
+3,Commercial,MBE certification interest decision,"Commercial positioning",not started,You + Tino,Federal presumptions removed 2023-2026 - see docs/07
+3,Commercial,HUBZone address check,"Free - 10% price evaluation preference",not started,You,Needs his address; unaffected by federal turmoil
+3,Commercial,SAM.gov registration (UEI + CAGE),"Capability statement corporate data",not started,You + Tino,
+3,Commercial,Written employer clearance for pipe project photos,"LEGAL GATE - default is prose only",not started,Tino,Assume unusable until cleared
+3,Commercial,Capability statement PDF drafted,"Commercial download - nobody in 21-site sample had one",not started,You,
+4,Ongoing,Steady drip of new project photos,"GBP recency, freshness",not started,Tino,4 photos per job habit - see photo-guide
+4,Ongoing,Review requests at every job closeout,"Reviews - 74% check 2+ sites",not started,Tino,Pair with the photo release ask
+4,Ongoing,Owner responses to all reviews,"89% of consumers expect them",not started,Tino,
+4,Ongoing,Short jobsite videos,"Differentiator - almost nobody at this scale does video",not started,Tino,
+4,Ongoing,Common customer questions verbatim,"Free FAQ content",not started,Tino,
+4,Ongoing,Awards / manufacturer certs / supplier relationships,"Trust content",not started,Tino,
