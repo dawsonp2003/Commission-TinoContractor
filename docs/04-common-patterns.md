@@ -38,7 +38,7 @@ worth having because almost *nobody* has them are in
 Three numbers matter most.
 
 **License number: 3 of 21.** This is nearly free to add, legally required in several states
-([01-legal-and-licensing.md](01-legal-and-licensing.md#2-the-license-number-probably-has-to-be-on-the-page-not-in-the-footer)),
+([01-legal-and-licensing.md](01-legal-and-licensing.md#2-georgia-does-not-require-the-license-number-in-advertising--but-print-it-anyway)),
 and instantly separates Tino from the unlicensed operators he competes with on price. The fact that
 89% of sites skip it means printing it is a differentiator *and* table stakes at the same time.
 

@@ -5,7 +5,7 @@ the audience split argued in [05-differentiators.md](05-differentiators.md).
 
 **This is a draft to react to, not a decision.** The service list in particular can't be finalized
 until we know which trades Tino is licensed to advertise
-([01-legal-and-licensing.md](01-legal-and-licensing.md#1-blocker-we-may-not-be-able-to-advertise-electrical-or-plumbing)).
+([01-legal-and-licensing.md](01-legal-and-licensing.md#1-electrical-and-plumbing-georgia-settles-it-outright)).
 
 ---
 

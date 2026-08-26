@@ -12,13 +12,17 @@ worked did so by publishing something a competitor couldn't copy without changin
 
 ### 1. Print the license number in the header, on every page
 
-Only 3 of 21 sites do it. It costs nothing, it's legally required in several states, and it
-immediately separates him from the unlicensed operators undercutting him on price. Da Vinci's
-`WA #606007438` and Valverde's `#276469, classifications A, B, C10, C16, C36` are the model —
-note that publishing the *classification codes* is even stronger, because it proves scope rather
-than just claiming it.
+Only 3 of 21 sites do it. It costs nothing and it immediately separates him from the unlicensed
+operators undercutting him on price. Da Vinci's `WA #606007438` and Valverde's `#276469,
+classifications A, B, C10, C16, C36` are the model — note that publishing the *classification codes*
+is even stronger, because it proves scope rather than just claiming it.
 
-Header or hero, not the footer. Arizona explicitly requires home-page placement.
+**Georgia does not require this** — unlike California or Arizona, there's no advertising rule for
+residential and general contractors
+([detail](01-legal-and-licensing.md#2-georgia-does-not-require-the-license-number-in-advertising--but-print-it-anyway)).
+So this is purely a trust play, which means we place it wherever it works hardest: the header, visible
+on every page. If he later holds a Georgia utility contractor license, § 43-14-9 makes displaying
+*that* number mandatory on vehicles, invoices, and proposals anyway.
 
 ### 2. A trust strip in the hero, not on an About page
 
@@ -85,7 +89,7 @@ DECA publishes a "documented 24–48 hour response time." Valverde runs a 24-hou
 kept promise is a real differentiator — but only if he can keep it. See
 [06-leadgen-and-local-seo.md](06-leadgen-and-local-seo.md#speed-to-lead) on why the famous "5-minute"
 statistic is weaker evidence than its ubiquity suggests, and
-[02-needed-from-tino.md](02-needed-from-tino.md#on-8-specifically) for what we need to ask him.
+[02-needed-from-tino.md](02-needed-from-tino.md#on-9-specifically) for what we need to ask him.
 
 ---
 
@@ -109,12 +113,27 @@ so plainly. A competitor can't match it without changing their business.
 ### 9. A permits-and-process page
 
 9 of 21 sites have a numbered process; almost none combine it with permit transparency. Name the
-jurisdictions he pulls permits in, walk through what inspections happen, and explain that
+Georgia jurisdictions he pulls permits in, walk through what inspections happen, and explain that
 unpermitted work can void a homeowner's insurance.
 
 This reframes his licensing from a cost into the reason to hire him — which matters specifically
 because his cheapest competition is unlicensed. And it's the same credibility argument that
 transfers straight to the commercial side.
+
+Georgia adds a real hook here: **§ 43-41-14 makes it unlawful for a building inspector to issue a
+permit without the contractor's license number** in a sworn document. So "I can pull the permit" is a
+verifiable claim about his licensure, not a soft promise — and an unlicensed competitor structurally
+cannot make it.
+
+### 9b. Publish the warranty — because Georgia already requires him to offer one
+
+**Ga. Comp. R. & Regs. R. 553-7-.01** requires a licensed Georgia residential contractor to *offer* a
+written warranty on every single-family contract over $2,500, benchmarked to the NAHB *Residential
+Construction Performance Guidelines*, attached to the contract before signing.
+
+Almost no small Georgia contractor does this. Since he has to produce the document anyway, publishing
+its terms on the site converts a compliance obligation into one of the strongest trust signals
+available — only 7 of 21 sites stated a warranty term at all. Free differentiation.
 
 ### 10. Bilingual as substance, not a badge
 

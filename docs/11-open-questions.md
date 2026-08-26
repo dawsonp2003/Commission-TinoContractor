@@ -37,6 +37,12 @@ Phase 1 (scaffold, deploy, image pipeline, forms) is safe to build now and indep
 answers. Phase 2 needs real content. Building the shell early means the photos have somewhere to land
 the day they arrive.
 
+Georgia adds a wrinkle worth deciding explicitly: **a lot of the residential copy cannot legally be
+published until he's licensed.** Two options — build those pages and hold them unpublished behind the
+license gate, or defer writing them entirely. I'd lean toward building them, gated in the schema by
+`requiresLicenseClass`, so the site fills out the day the license issues rather than starting from
+scratch then.
+
 ### 5. Where does the "personal brand" line sit?
 
 His strongest asset is that he does the work himself — but "one guy" can read as *can't handle my
@@ -50,6 +56,15 @@ Ace Handyman's productized half-day/full-day packages are a great pattern *if* h
 If he'd rather chase additions and commercial scopes, the site should quietly filter small jobs out
 instead. This changes the homepage.
 
+Georgia makes this more interesting than it looks: **§ 43-41-17(g) exempts non-structural repair work
+at any dollar amount** provided he discloses in writing that he holds no Chapter 41 license. So if he
+*isn't* licensed yet, productized repair work is the one revenue line the site can legitimately
+advertise from day one. That's a real bridge strategy, not a consolation prize — and it starts
+generating reviews before the license lands.
+
+The catch: the disclosure has to be genuine and prominent, and § 43-41-12(a)(7) criminalizes slicing
+larger jobs into sub-threshold pieces. So this works as a real small-jobs business, not as a workaround.
+
 ### 7. What are the ideas you wanted to hit?
 
 You mentioned having some. They may reorder everything above — worth hearing before Phase 1 starts.
@@ -60,35 +75,67 @@ You mentioned having some. They may reorder everything above — worth hearing b
 
 The full list is [02-needed-from-tino.md](02-needed-from-tino.md). The ones that stop work:
 
-1. **State and city** — nearly every legal and SEO decision depends on it
-2. **Exact license classifications** — determines what we may legally advertise
-3. **Electrical and plumbing: licensed, or subcontracted?** — misdemeanor exposure in CA and TX;
-   see [01-legal-and-licensing.md](01-legal-and-licensing.md#1-blocker-we-may-not-be-able-to-advertise-electrical-or-plumbing)
-4. **Business name** — unblocks domain, email, logo, Google profile
-5. **How fast can he really answer the phone?** — determines the whole CTA architecture
+1. **His prior employment agreements, reviewed by a Georgia attorney** — a customer non-solicit could
+   bar him from the agencies the commercial page targets. Most urgent item in the project.
+2. **Does he hold a Georgia Chapter 41 license?** In Georgia, offering a service *is* contracting, so
+   without it most residential copy is unpublishable.
+3. **Does he hold any Georgia Chapter 14 license?** Determines the service list.
+4. **Notarized experience letters requested from former employers** — gates the utility license and
+   decays with time.
+5. **Business name** — unblocks domain, email, logo, Google profile.
+6. **How fast can he really answer the phone?** — determines the whole CTA architecture.
 
 ---
 
-## Things I could not determine from research
+## Resolved by the Georgia research
+
+Previously open, now settled:
+
+- **Can he self-perform electrical or plumbing?** **No, definitively.** § 43-41-2(5) and (9) require
+  Chapter 14 subcontracting with no dollar minimum, and advertising the trades is itself the violation
+  under § 43-14-2(7) and (11). No judgment call left to make.
+- **Must the license number appear in advertising?** **No** — Georgia has no such rule for Chapter 41,
+  unlike California and Arizona. We'll print it anyway as a trust signal, but placement is now ours to
+  choose.
+- **Is there a separate underground utility license?** **Yes**, and it's his biggest opportunity.
+  Georgia's Utility Foreman → Utility Manager → Utility Contractor path is achievable on experience.
+  See [02a-georgia-credentials-roadmap.md](02a-georgia-credentials-roadmap.md).
+- **Does Render's bandwidth cap matter?** **No.** Overage is $0.15/GB on every plan, so a card on file
+  reduces it to pennies, and Pro would cost $25 for $3 of bandwidth. I'd overstated this.
+
+---
+
+## Things I still could not determine
 
 Flagged so nobody treats them as settled:
 
-- **Whether "certified" maps to a real credential.** The brief uses the word; it's a regulated term of
-  art in some states (Florida distinguishes *certified* from *registered*). Needs confirmation before
-  we print it.
-- **Whether he *designed* pipe networks or built to someone else's design.** The brief says
-  "building/designing." Design is a much stronger claim, and in some states "engineering" is a
-  protected title. This meaningfully changes the commercial pitch either way.
-- **Whether his state requires a separate underground utility license.** Florida and Georgia do. If
-  his does and he qualifies on experience, that's a credential very few multi-trade contractors hold
-  — a real opportunity, not just a compliance item.
+- **Whether "certified" maps to a real credential.** Still unknown, and it's the riskiest word on the
+  site — § 43-41-12(a)(2) is a misdemeanor with a $1,000 minimum fine, and Georgia's FBPA reaches
+  certification claims specifically.
+- **Whether he *designed* pipe networks or built to someone else's design.** Georgia makes this matter
+  twice: "engineer" is a protected title, and the Level II erosion-control design certification is
+  restricted to registered design professionals, so he cannot be described as designing ES&PC plans.
 - **Whether prior-employer project photos are usable at all.** Assume no until we have written
   clearance.
-- **His actual competition.** Local competitive research is worth doing once we know the city — who
-  ranks for "general contractor + city," what they charge, whether they publish licenses. Cheap and
-  high-value, but it needs the city first.
-- **Whether his address is in a HUBZone.** Free to check on the [SBA map](https://www.sba.gov/certifications/)
-  once we have it, and unaffected by the federal certification turmoil.
+- **Which Georgia city or county his office is in.** Needed for the occupation tax certificate, zoning,
+  service-area SEO, and to know whether MARTA or GDOT is his DBE certifier (MARTA covers Fulton,
+  DeKalb, and Clayton).
+- **His actual competition.** Worth researching once we know the city — who ranks for "general
+  contractor + city," what they charge, whether they publish licenses.
+- **Whether his address is in a HUBZone.** Free to check on the [SBA map](https://www.sba.gov/certifications/),
+  and unaffected by the certification turmoil.
+- **The Georgia utility contractor Class A / B / U distinction.** § 43-14-8.2 names three classes and
+  § 43-14-6(a)(4)(H) penalizes "bidding in excess of license coverage," but **no definition appears
+  anywhere in Chapter 14 or the Department 121 rules**, and Rule 121-2-.07 describes a single
+  undifferentiated statewide license. A real statute-to-rules gap. Call the division at 478-207-2440.
+- **Board fee schedules.** The Georgia Secretary of State site sits behind a Cloudflare challenge that
+  blocked retrieval, so every fee figure in these docs is from a secondary source and marked as such.
+- **Whether Atlanta's HABE and other ethnicity-linked municipal categories survive challenge.** They're
+  municipal ordinance programs untouched by the federal rulings, but they're the type of program that
+  reasoning targets, and no Georgia litigation resolves it.
+- **Metro county diversity programs** (APS, Fulton, DeKalb, Gwinnett, Cobb). Not verified — these are
+  board-level policies that change with each administration. Confirm with each purchasing department
+  before any claim goes on the site.
 
 ---
 

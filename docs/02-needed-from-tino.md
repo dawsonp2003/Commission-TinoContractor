@@ -12,18 +12,33 @@ makes it better over time.
 
 ## Tier 1 — Blockers (we cannot write the service list or lay out a page without these)
 
+He operates in **Georgia**, which answers a lot of what used to be on this list. What's left:
+
 | # | Item | Why it blocks |
 | --- | --- | --- |
-| 1 | **State and city of operation** | Almost every legal and SEO decision turns on this. Advertising rules, license display placement, trade-licensing requirements, service-area strategy. |
-| 2 | **Exact license type, classification codes, number, issuing board, expiration date** + a scan | Goes in the header on every page. Several states legally require it in all advertising. Classification codes tell us what we may advertise. |
-| 3 | **Which trades is he actually licensed for?** Specifically electrical and plumbing — licensed, or subcontracted? | Advertising an unlicensed trade is a misdemeanor in CA and TX. This determines the entire service list. See [01-legal-and-licensing.md](01-legal-and-licensing.md#1-blocker-we-may-not-be-able-to-advertise-electrical-or-plumbing). |
-| 4 | **What "certified" means** — which credential, from whom | It's in the brief but it's a regulated term of art in some states. |
-| 5 | **Business name decision** — the LLC name and the domain, and whether they match | Everything downstream (logo, email, Google profile, footer, license advertising) depends on it. He reportedly has an idea already — we need it confirmed and checked for availability. |
-| 6 | **LLC status** — formed? EIN? Does the entity name match the license exactly? | Name mismatches break local SEO and violate CA advertising rules. |
-| 7 | **Insurance** — GL limits, workers' comp status, commercial auto, agent contact | We can't print "insured" otherwise, and GCs won't prequalify him without it. |
-| 8 | **How he wants to be contacted, honestly** | This determines the whole call-to-action architecture. See the sub-questions below — this is the most underrated item on the list. |
+| 1 | **Does he hold a Georgia Chapter 41 contractor license?** Which classification, number, expiration — plus a scan | In Georgia, **offering** contracting services *is* contracting (§ 43-41-2(3)). Without this license we cannot advertise additions, remodels, or framing over $2,500 at all — only non-structural repair work with a written disclosure. This gates the entire residential side. |
+| 2 | **Does he hold any Georgia Chapter 14 trade license?** Electrical, plumbing, or utility | Georgia flatly prohibits a general/residential contractor from self-performing these (§ 43-41-2(5), (9)), and *advertising* them is itself the violation. Determines the service list. |
+| 3 | **Every prior employment agreement** — non-compete, customer non-solicit, NDA, equity | **The most urgent item in the project.** Georgia enforces these and lets judges narrow overbroad ones rather than void them. A customer non-solicit could bar him from the exact agencies the commercial page targets. Needs an attorney, not us. See [01-legal-and-licensing.md §5](01-legal-and-licensing.md#5-urgent--his-old-employment-agreements-may-restrict-who-the-site-can-market-to). |
+| 4 | **What "certified" means** — which credential, from whom | Bare "certified" is a § 43-41-12(a)(2) misdemeanor risk (min. $1,000 fine) and an FBPA § 10-1-393(b)(5) violation. |
+| 5 | **Business name decision** — the LLC name and the domain, and whether they match | Everything downstream (logo, email, Google profile, footer) depends on it. He reportedly has an idea already — needs confirming and checking for availability. |
+| 6 | **LLC status** — formed? EIN? Georgia sales & use tax number? Does the entity name match the license exactly? | Georgia requires **all** contractors to register for a sales and use tax number and file monthly, even with zero activity. |
+| 7 | **Insurance** — GL limits, workers' comp status, commercial auto, agent contact | Georgia's board mandates $300K GL (Residential-Basic) or $500K (all other classes) as a condition of licensure *and* renewal. Note LLC members count toward the 3-employee workers' comp threshold. |
+| 8 | **Which Georgia city or county is his office in?** | Determines the local occupation tax certificate (only one needed, where the office is) and home-occupation zoning. Also sets the service-area SEO strategy. |
+| 9 | **How he wants to be contacted, honestly** | Determines the whole call-to-action architecture. See the sub-questions below — the most underrated item on the list. |
 
-### On #8, specifically
+### Georgia answers some questions for us
+
+Worth noting what we *don't* have to ask, because Georgia law is explicit:
+
+- **Can he self-perform electrical or plumbing?** No. Never. § 43-41-2(5) and (9) require it be
+  subcontracted to a Chapter 14 licensee, with no dollar minimum. We don't need his opinion on this.
+- **Must the license number appear in advertising?** No — Georgia has no such rule for Chapter 41
+  (unlike California or Arizona). We'll print it anyway because it's the best trust signal available,
+  but it's now a design choice rather than a compliance requirement.
+- **Is there a separate underground utility license?** Yes, and it's a real opportunity — see
+  [02a-georgia-credentials-roadmap.md](02a-georgia-credentials-roadmap.md).
+
+### On #9, specifically
 
 Speed of response is plausibly the highest-leverage variable in the whole project (see
 [06-leadgen-and-local-seo.md](06-leadgen-and-local-seo.md#speed-to-lead)). So we need real answers,
@@ -109,7 +124,7 @@ of job, not by aesthetic.**
 - [ ] Detail shots (tile edges, trim, panel work) — these prove finish quality better than wide shots
 - [ ] For **each** photo: who took it, whose property it is, and whether it was done for a previous
       employer. This is a legal gate, not paperwork for its own sake — see
-      [01-legal-and-licensing.md](01-legal-and-licensing.md#4-photos-the-prior-employer-problem-is-the-sharp-edge).
+      [01-legal-and-licensing.md](01-legal-and-licensing.md#6-photos-privacy-and-prior-employer-work).
 - [ ] Signed photo releases for any client property
 - [ ] Video, if he has any. Even phone walkthroughs. Almost nobody at his scale does video.
 
@@ -151,15 +166,24 @@ still better than silence. This is a conversation, not a form field.
 This is where his rarest asset lives. Detail in
 [07-commercial-bid-playbook.md](07-commercial-bid-playbook.md).
 
+- [ ] **NOTARIZED EXPERIENCE LETTERS ON COMPANY LETTERHEAD from every former employer.** Do this
+      first, and do it now. Georgia Rules 121-2-.08(3) and 121-2-.09(3) require them for the Utility
+      Manager and Foreman applications, and **without them the application cannot be filed at all.**
+      Each letter needs dates, his role, the nature of the utility work, and explicit confirmation the
+      systems were **at least five feet underground** (the statutory trigger). HR departments
+      reorganize and supervisors retire — every month of delay makes these harder to get, and it's
+      easier to ask before he's visibly competing with them.
 - [ ] **Full résumé of the pipe-network experience.** Employers, years, project types, pipe
       diameters and materials, depths, agencies and municipalities, project values, his actual role
       (design? layout? foreman? superintendent?). This is the backbone of the capability statement
       and it's all prose, so no photo-permission problem.
-- [ ] Whether he did *design* work on those networks or only construction — "designing" pipe
-      networks is a much stronger claim and we need to know exactly what it means
+- [ ] Whether he did *design* work on those networks or only construction. "Designing" is a much
+      stronger claim, and in Georgia it matters twice over: "engineer" is a protected title, and the
+      **Level II** erosion-control design certification is restricted to registered design
+      professionals, so he can't be described as designing ES&PC plans.
 - [ ] Safety and technical certifications, with cards: OSHA 10/30, competent person for
       trenching/excavation, confined space, traffic control/flagger, NASSCO PACP/MACP/LACP, welding,
-      backflow, erosion control
+      backflow, and the Georgia **Level 1A** erosion & sediment control blue card
 - [ ] Equipment he owns or has access to (excavators, trailers, compactors, laser levels, pipe
       lasers). Civil contractors sell equipment lists as proof of capability.
 - [ ] What he self-performs vs. subcontracts — publishable as a percentage, which reads as very
@@ -168,9 +192,15 @@ This is where his rarest asset lives. Detail in
 - [ ] Financial readiness: bookkeeping system, CPA relationship, whether statements exist. Needed
       for prequalification above roughly $250K.
 - [ ] References from the commercial side — former supervisors, agency contacts, GCs
-- [ ] Ownership documentation (51%+) and whether he wants to pursue MBE certification. **Note:** the
-      federal landscape here changed materially in 2023–2026 and being Hispanic no longer carries an
-      automatic presumption — read the playbook before promising anything.
+- [ ] Ownership documentation (51%+) and whether he wants to pursue certification. **Note:** the
+      federal landscape changed materially in 2023–2026 and being Hispanic no longer carries an
+      automatic presumption. In Georgia the realistic options are GDOT/MARTA DBE, City of Atlanta
+      EBO/HABE, and NMSDC via the Georgia Minority Supplier Development Council — read the playbook
+      before promising anything.
+- [ ] **A list of every agency, municipality, developer, and GC he had material contact with at
+      former employers.** Not for marketing — for the attorney reviewing his non-solicit. Georgia
+      enforces customer non-solicitation clauses with no geographic limit required, and these are
+      exactly the entities such a clause covers.
 - [ ] Written clearance from former employers for any project photos, or confirmation we're
       describing it in prose only
 
@@ -188,13 +218,21 @@ This is where his rarest asset lives. Detail in
 
 ---
 
-## The five things to ask for first
+## The six things to ask for first
 
 If we only get one conversation, ask these:
 
-1. **What state, and what exactly does your license cover?** (Unblocks everything.)
-2. **Are you licensed for electrical and plumbing, or do you sub them out?** (Legal exposure.)
-3. **What's the business name going to be?** (Unblocks domain, logo, email, profile.)
-4. **Photos of your house addition, the carport, and the outdoor kitchen — before and after.**
+1. **Do you have a Georgia contractor license, and what class?** (Gates the entire residential side —
+   in Georgia we can't advertise remodels or additions without it.)
+2. **Do you have any Georgia electrical, plumbing, or utility license?** (Determines the service list.
+   The answer is probably no, and that's fine — it just changes the wording.)
+3. **Can you dig up everything you signed with your old employers?** Non-compete, non-solicit, NDA.
+   (This one needs a lawyer and it could constrain who we're allowed to market to.)
+4. **Can you request notarized experience letters on letterhead from your old employers — now?**
+   (Required for the utility license, gets harder every month, and easier to ask before you're a
+   visible competitor.)
+5. **Photos of your house addition, the carport, and the outdoor kitchen — before and after.**
    (Unblocks the portfolio, and it's the material with no permission problem.)
-5. **When someone calls you, how fast can you really pick up?** (Unblocks the CTA design.)
+6. **When someone calls you, how fast can you really pick up?** (Unblocks the CTA design.)
+
+Business name is still needed, but it's cheap to answer and doesn't require research on his end.
