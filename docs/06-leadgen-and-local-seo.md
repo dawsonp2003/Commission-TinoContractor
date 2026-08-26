@@ -178,8 +178,7 @@ Portfolio sites die on image weight, and Tino's whole value proposition is photo
 - Lazy-loading below the fold, eager on the hero image
 - Explicit `width`/`height` on every image to prevent layout shift
 - A CDN, and images served from an image CDN rather than our own origin (see
-  [08-tech-stack-and-hosting.md](08-tech-stack-and-hosting.md) — this also matters for Render's
-  bandwidth cap)
+  [08-tech-stack-and-hosting.md](08-tech-stack-and-hosting.md#so-why-still-use-an-image-cdn))
 - Test on a throttled mobile connection, not a desktop
 
 Trend pieces are calling for mobile LCP under 1.5s and images under 100KB. Whether or not those exact

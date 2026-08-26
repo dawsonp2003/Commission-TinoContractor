@@ -6,43 +6,68 @@
 | --- | --- |
 | Framework | **Astro** (static output) |
 | Starting point | [onwidget/astrowind](https://github.com/onwidget/astrowind) — 5.9k stars, MIT, actively maintained |
-| Hosting | Render **Static Site** (free, global CDN, PR previews) |
-| Images | **Served off Render** — Cloudflare Images (~$5/mo) or Cloudinary free tier |
+| Hosting | Render **Static Site**, Hobby plan — free, global CDN, PR previews. Add a payment method. |
+| Images | Cloudflare Images (~$5/mo) — for page speed, not to dodge a bandwidth cap |
 | Forms | **Web3Forms** (250 submissions/mo free) + `react-hook-form` / native validation |
 | Bilingual | Astro's built-in i18n routing + a typed JSON dictionary |
 | Content editing | Start with files in the repo; **Sanity** free tier when Tino wants to self-manage |
 | Reviews | Hand-curated JSON, no `aggregateRating` markup |
 
-Two findings drove most of this: Render's bandwidth cap (below) and the fact that there is no
-good open-source contractor template worth inheriting (also below).
+The main driver was that there is no good open-source contractor template worth inheriting (below).
+Render's bandwidth allowance turned out to be a non-issue once we looked at the overage rate.
 
 ---
 
-## Render: the constraint that shapes everything
+## Render: stay on Hobby, add a card, don't upgrade
 
-**Verified against Render's docs on 2026-08-26.** Outbound bandwidth is metered per workspace:
+**Verified against Render's docs and pricing page on 2026-08-26.**
 
-| Plan | Included bandwidth |
-| --- | --- |
-| Hobby | **5 GB / month** |
-| Pro | 25 GB |
-| Scale | 1 TB |
+| Plan | Price | Included bandwidth | Overage |
+| --- | --- | --- | --- |
+| Hobby | $0/mo | 5 GB/mo | **$0.15/GB** |
+| Pro | $25/mo | 25 GB/mo | $0.15/GB |
+| Scale | $499/mo | 1 TB/mo | $0.15/GB |
 
-Source: [Render outbound bandwidth docs](https://render.com/docs/outbound-bandwidth). Static sites
-count against this. And critically:
+Sources: [outbound bandwidth docs](https://render.com/docs/outbound-bandwidth),
+[pricing](https://render.com/pricing). Static sites count against this.
+
+**The overage rate is the whole answer, and it makes Pro pointless for this site.** Pro's extra 20 GB
+is worth $3 at the metered rate but costs $25/month. Since the overage rate is identical on every
+plan, **Hobby plus overage is always cheaper than Pro for bandwidth alone** — there is no crossover
+point. Pro is worth buying only for its other features (unlimited seats, full-stack preview
+environments, horizontal autoscaling, HTTP request logs, 14-day log retention), none of which a
+one-person brochure site needs.
+
+**The one thing that actually matters:** put a payment method on the account.
 
 > "*If you've linked a payment method,* Render bills you for each additional GB… *Otherwise,* Render
 > spins down your workspace's services until the start of the next month."
 
-**5 GB is roughly a few thousand page views for a photo-heavy site.** For a business whose entire
-value proposition is a large jobsite photo gallery, this is the single most important technical
-constraint in the project — and the failure mode is the site going *dark*, not just slow.
+Without a card, exceeding 5 GB takes the site **offline** until the next month. With a card, it costs
+pennies. To put the risk in scale: at a heavy 2 MB per page view, 5 GB is about 2,500 views, and
+10,000 views/month would run 20 GB — a **$2.25** overage. Even a wildly successful month is a rounding
+error.
 
-Note that some older write-ups still cite a legacy 100 GB Hobby allowance. That is out of date;
-Render introduced new workspace plans on April 23, 2026.
+Note that some older write-ups still cite a legacy 100 GB Hobby allowance. That's out of date; Render
+introduced new workspace plans on April 23, 2026.
 
-**Mitigation: serve every image from an image CDN so the heavy bytes never touch Render.** HTML, CSS,
-and JS for a site like this is a few hundred KB per page. Images are 95%+ of the transfer.
+### So why still use an image CDN?
+
+**For speed, not cost.** Image weight is the thing that kills photo-heavy sites in Core Web Vitals,
+and page speed feeds local search performance
+([06-leadgen-and-local-seo.md](06-leadgen-and-local-seo.md#performance)). Cloudflare Images at ~$5/mo
+also handles resizing and format negotiation, which saves us building that ourselves.
+
+It's a performance decision with a pleasant side effect on bandwidth — not a way to dodge a cap. Worth
+doing, but not urgent in the way the earlier draft implied.
+
+### Should he switch off Render?
+
+**No.** He's comfortable with it, the static-site path is a two-field setup, and the free tier
+genuinely covers this. Alternatives exist — Cloudflare Pages offers unlimited free bandwidth, Netlify
+includes 100 GB free — but neither is worth the cost of working in an unfamiliar dashboard to save a
+few dollars a month. One caution if the question ever comes up: **Vercel's Hobby tier prohibits
+commercial use**, so it isn't an option for a business site regardless.
 
 ### Static site vs. web service
 
@@ -171,7 +196,7 @@ layouts.
 
 | Option | Cost | Notes |
 | --- | --- | --- |
-| **Cloudflare Images** | $5/mo per 100K stored images, **free delivery bandwidth** | Cheapest real answer, and it moves image bytes off Render's metered path entirely. **Recommended.** |
+| **Cloudflare Images** | $5/mo per 100K stored images, **free delivery bandwidth** | **Recommended.** Handles resizing and format negotiation, and keeps image bytes off Render's metered path. |
 | Cloudinary | Free: 25 credits/mo (1 credit = 1,000 transformations *or* 1 GB storage *or* 1 GB bandwidth), rolling 30-day window | Fine to start; the rolling window makes it easy to trip. |
 | imgix | **No free tier**, $100/mo minimum | Not viable. |
 
