@@ -1,0 +1,110 @@
+"use client";
+
+import Link from "next/link";
+import { useState } from "react";
+import { Menu, Phone, X } from "lucide-react";
+import type { Locale } from "@/lib/i18n/config";
+import { localePath } from "@/lib/i18n/config";
+import { getUi } from "@/lib/i18n/ui";
+import type { SiteConfig } from "@/lib/content";
+import { cn } from "@/lib/cn";
+
+type Props = {
+  locale: Locale;
+  config: SiteConfig;
+  path: string;
+};
+
+export function Header({ locale, config, path }: Props) {
+  const ui = getUi(locale);
+  const [open, setOpen] = useState(false);
+
+  const links = [
+    { href: "/residential", label: ui.nav.residential },
+    { href: "/commercial", label: ui.nav.commercial },
+    { href: "/projects", label: ui.nav.projects },
+    { href: "/about", label: ui.nav.about },
+    { href: "/pricing", label: ui.nav.pricing },
+    { href: "/reviews", label: ui.nav.reviews },
+    { href: "/news", label: ui.nav.news },
+    { href: "/contact", label: ui.nav.contact },
+  ];
+
+  return (
+    <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 lg:px-6">
+        <Link href={localePath(locale, "/")} className="flex flex-col">
+          <span className="text-lg font-bold tracking-tight text-slate-900">
+            {config.businessName}
+          </span>
+          <span className="text-xs text-amber-700">
+            GA Lic. {config.licenseNumber}
+          </span>
+        </Link>
+
+        <nav className="hidden items-center gap-6 lg:flex">
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              href={localePath(locale, link.href)}
+              className="text-sm font-medium text-slate-600 transition hover:text-amber-700"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+
+        <div className="flex items-center gap-2">
+          <a
+            href={`tel:${config.phone}`}
+            className="hidden items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800 sm:flex"
+          >
+            <Phone className="h-4 w-4" />
+            {config.phoneDisplay}
+          </a>
+          <Link
+            href={localePath(locale, "/contact")}
+            className="hidden rounded-full bg-amber-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-amber-700 md:inline-flex"
+          >
+            {ui.cta.quote}
+          </Link>
+          <button
+            type="button"
+            className="rounded-lg p-2 text-slate-700 lg:hidden"
+            onClick={() => setOpen(!open)}
+            aria-label="Menu"
+          >
+            {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
+        </div>
+      </div>
+
+      <div
+        className={cn(
+          "border-t border-slate-100 bg-white lg:hidden",
+          open ? "block" : "hidden",
+        )}
+      >
+        <nav className="flex flex-col px-4 py-3">
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              href={localePath(locale, link.href)}
+              className="border-b border-slate-50 py-3 text-sm font-medium text-slate-700"
+              onClick={() => setOpen(false)}
+            >
+              {link.label}
+            </Link>
+          ))}
+          <a
+            href={`tel:${config.phone}`}
+            className="mt-3 flex items-center justify-center gap-2 rounded-lg bg-slate-900 py-3 text-sm font-semibold text-white"
+          >
+            <Phone className="h-4 w-4" />
+            {config.phoneDisplay}
+          </a>
+        </nav>
+      </div>
+    </header>
+  );
+}

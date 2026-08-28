@@ -1,0 +1,42 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model ContentBlock {
+  id        String   @id @default(cuid())
+  key       String
+  locale    String
+  data      String
+  updatedAt DateTime @updatedAt
+
+  @@unique([key, locale])
+}
+
+model Message {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  locale    String
+  audience  String?
+  subject   String?
+  body      String
+  status    String   @default("new")
+  createdAt DateTime @default(now())
+  replies   Reply[]
+}
+
+model Reply {
+  id             String   @id @default(cuid())
+  messageId      String
+  message        Message  @relation(fields: [messageId], references: [id], onDelete: Cascade)
+  body           String
+  bodyTranslated String?
+  fromLocale     String
+  createdAt      DateTime @default(now())
+}

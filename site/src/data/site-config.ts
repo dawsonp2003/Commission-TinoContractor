@@ -1,0 +1,67 @@
+const shared = {
+  phone: "+14045550187",
+  phoneDisplay: "(404) 555-0187",
+  sms: "+14045550187",
+  whatsapp: "+14045550187",
+  email: "hello@martinezbuilt.example",
+  address: "2847 Peachtree Industrial Blvd, Duluth, GA 30096",
+  licenseNumber: "GCCO-00-DEMO-1234",
+  licenseClassifications: ["Residential", "General Contractor"],
+  googleRating: 4.9,
+  googleReviewCount: 47,
+  yearsExperience: 22,
+  projectCount: 120,
+  warrantyTerm: "2-Year Workmanship",
+  emergencyAvailable: true,
+  hours: "Mon–Fri 7:00 AM – 6:00 PM · Sat by appointment",
+  serviceAreaCities: [
+    "Atlanta",
+    "Duluth",
+    "Lawrenceville",
+    "Norcross",
+    "Decatur",
+    "Marietta",
+    "Roswell",
+    "Alpharetta",
+    "Sandy Springs",
+    "Smyrna",
+    "Kennesaw",
+    "Stone Mountain",
+    "Tucker",
+    "Buford",
+    "Suwanee",
+  ],
+  social: {
+    google: "https://google.com/maps",
+    facebook: "https://facebook.com",
+    instagram: "https://instagram.com",
+  },
+  insurance: {
+    glPerOccurrence: "$1M",
+    glAggregate: "$2M",
+    workersComp: "Active",
+  },
+};
+
+export const siteConfig = {
+  en: {
+    ...shared,
+    businessName: "Martinez Built LLC",
+    legalEntityName: "Martinez Built LLC",
+    tagline: "Metro Atlanta's trusted design-build contractor",
+    ownerName: "Tino Martinez",
+    ownerTitle: "Owner & Lead Contractor",
+    bilingualNote:
+      "Bilingual service is built into how we work — not an afterthought. English and Spanish from the first call to final walkthrough.",
+  },
+  es: {
+    ...shared,
+    businessName: "Martinez Built LLC",
+    legalEntityName: "Martinez Built LLC",
+    tagline: "El contratista de diseño y construcción de confianza en el área metropolitana de Atlanta",
+    ownerName: "Tino Martinez",
+    ownerTitle: "Propietario y Contratista Principal",
+    bilingualNote:
+      "El servicio bilingüe está integrado en cómo trabajamos — no es un extra. Inglés y español desde la primera llamada hasta la entrega final.",
+  },
+};
