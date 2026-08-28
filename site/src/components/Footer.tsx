@@ -1,16 +1,16 @@
+"use client";
+
 import Link from "next/link";
 import { Phone, MessageCircle } from "lucide-react";
-import type { Locale } from "@/lib/i18n/config";
 import { localePath } from "@/lib/i18n/config";
+import { useLocale } from "@/lib/i18n/use-locale";
 import { getUi } from "@/lib/i18n/ui";
-import type { SiteConfig } from "@/lib/content";
+import { siteConfig } from "@/data/site-config";
+import { BusinessName } from "@/components/BusinessName";
 
-type Props = {
-  locale: Locale;
-  config: SiteConfig;
-};
-
-export function Footer({ locale, config }: Props) {
+export function Footer() {
+  const { locale } = useLocale();
+  const config = siteConfig[locale];
   const ui = getUi(locale);
   const year = new Date().getFullYear();
 
@@ -18,14 +18,16 @@ export function Footer({ locale, config }: Props) {
     <footer className="mt-auto border-t border-slate-200 bg-slate-900 text-slate-300">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-2 lg:grid-cols-4 lg:px-6">
         <div>
-          <p className="text-lg font-bold text-white">{config.businessName}</p>
+          <p className="text-lg font-bold text-white">
+            <BusinessName name={config.businessName} />
+          </p>
           <p className="mt-2 text-sm">{config.tagline}</p>
           <p className="mt-4 text-xs text-amber-400/90">{ui.footer.demo}</p>
         </div>
         <div>
           <p className="font-semibold text-white">{ui.footer.hours}</p>
           <p className="mt-2 text-sm">{config.hours}</p>
-          <p className="mt-4 font-semibold text-white">License</p>
+          <p className="mt-4 font-semibold text-white">{ui.footer.license}</p>
           <p className="text-sm">{config.licenseNumber}</p>
           <p className="text-sm">{config.licenseClassifications.join(" · ")}</p>
         </div>
@@ -36,7 +38,7 @@ export function Footer({ locale, config }: Props) {
           </p>
         </div>
         <div>
-          <p className="font-semibold text-white">Contact</p>
+          <p className="font-semibold text-white">{ui.footer.contact}</p>
           <a href={`tel:${config.phone}`} className="mt-2 block text-sm hover:text-white">
             {config.phoneDisplay}
           </a>
@@ -47,13 +49,15 @@ export function Footer({ locale, config }: Props) {
         </div>
       </div>
       <div className="border-t border-slate-800 px-4 py-4 text-center text-xs text-slate-500">
-        © {year} {config.businessName}. {ui.footer.rights}
+        © {year} <BusinessName name={config.businessName} />. {ui.footer.rights}
       </div>
     </footer>
   );
 }
 
-export function MobileCallBar({ locale, config }: Props) {
+export function MobileCallBar() {
+  const { locale } = useLocale();
+  const config = siteConfig[locale];
   const ui = getUi(locale);
 
   return (

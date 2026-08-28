@@ -3,6 +3,7 @@ import type { Locale } from "./config";
 export const ui = {
   en: {
     nav: {
+      home: "Home",
       residential: "Residential",
       commercial: "Commercial",
       projects: "Projects",
@@ -22,10 +23,16 @@ export const ui = {
     lang: {
       bannerEn: "¿Prefiere español?",
       bannerEs: "Prefer English?",
-      yes: "Sí",
-      yesEn: "Yes",
+      yesToSpanish: "Sí",
+      yesToEnglish: "Yes",
       dismiss: "No thanks",
       toggle: "Language",
+    },
+    trust: {
+      reviews: "Reviews",
+      projects: "Projects",
+      years: "Years",
+      licensePrefix: "GA License #",
     },
     home: {
       heroTitle: "Built right. Built to last.",
@@ -39,7 +46,7 @@ export const ui = {
       audienceCommercial: "Commercial & Municipal",
       audienceCommercialDesc:
         "Sanitary sewer, storm drainage, and water main experience with self-performance and safety-first delivery.",
-      whyTitle: "Why Martinez Built",
+      whyTitle: "Why Gutierrez Built",
       processTitle: "How We Work",
       projectsTitle: "Featured Projects",
       servicesTitle: "What We Do",
@@ -66,11 +73,14 @@ export const ui = {
       demo: "Demo site with placeholder information for preview purposes.",
       hours: "Hours",
       serviceArea: "Service Area",
+      license: "License",
+      contact: "Contact",
       rights: "All rights reserved.",
     },
   },
   es: {
     nav: {
+      home: "Inicio",
       residential: "Residencial",
       commercial: "Comercial",
       projects: "Proyectos",
@@ -89,11 +99,17 @@ export const ui = {
     },
     lang: {
       bannerEn: "¿Prefiere español?",
-      bannerEs: "¿Prefiere inglés?",
-      yes: "Sí",
-      yesEn: "Sí",
+      bannerEs: "Prefer English?",
+      yesToSpanish: "Sí",
+      yesToEnglish: "Yes",
       dismiss: "No, gracias",
       toggle: "Idioma",
+    },
+    trust: {
+      reviews: "Reseñas",
+      projects: "Proyectos",
+      years: "Años",
+      licensePrefix: "Licencia GA #",
     },
     home: {
       heroTitle: "Construido bien. Hecho para durar.",
@@ -108,7 +124,7 @@ export const ui = {
       audienceCommercial: "Comercial y Municipal",
       audienceCommercialDesc:
         "Experiencia en alcantarillado sanitario, drenaje pluvial y líneas de agua con auto-desempeño y seguridad primero.",
-      whyTitle: "Por Qué Martinez Built",
+      whyTitle: "Por Qué Gutierrez Built",
       processTitle: "Cómo Trabajamos",
       projectsTitle: "Proyectos Destacados",
       servicesTitle: "Lo Que Hacemos",
@@ -135,6 +151,8 @@ export const ui = {
       demo: "Sitio de demostración con información de ejemplo para fines de vista previa.",
       hours: "Horario",
       serviceArea: "Área de Servicio",
+      license: "Licencia",
+      contact: "Contacto",
       rights: "Todos los derechos reservados.",
     },
   },

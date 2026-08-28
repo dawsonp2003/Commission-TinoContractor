@@ -1,10 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Suspense } from "react";
 import type { Locale } from "@/lib/i18n/config";
 import { localePath } from "@/lib/i18n/config";
-import { getSiteConfig, getServices } from "@/lib/content";
-import { ContactForm } from "@/components/ContactForm";
+import { getSiteConfig, getServices, getProjects } from "@/lib/content";
+import { ContactSection } from "@/components/ContactSection";
 import { TrustStrip } from "@/components/TrustStrip";
+import { ProjectGrid } from "@/components/ProjectGrid";
+import { ProjectBackLink } from "@/components/ProjectBackLink";
 
 export async function ContactPageView({ locale }: { locale: Locale }) {
   const config = await getSiteConfig(locale);
@@ -24,60 +27,8 @@ export async function ContactPageView({ locale }: { locale: Locale }) {
           </p>
         </div>
       </section>
-      <TrustStrip config={config} />
-      <section className="mx-auto max-w-7xl px-4 py-16 lg:px-6">
-        <div className="grid gap-12 lg:grid-cols-2">
-          <div>
-            <h2 className="text-xl font-semibold">
-              {isEs ? "Formulario Rápido" : "Quick Form"}
-            </h2>
-            <div className="mt-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-              <ContactForm locale={locale} />
-            </div>
-          </div>
-          <div className="space-y-8">
-            <div>
-              <h3 className="font-semibold text-slate-900">
-                {isEs ? "Llámenos" : "Call Us"}
-              </h3>
-              <a href={`tel:${config.phone}`} className="mt-2 block text-2xl font-bold text-amber-700">
-                {config.phoneDisplay}
-              </a>
-            </div>
-            <div>
-              <h3 className="font-semibold text-slate-900">
-                {isEs ? "Envíe un Mensaje" : "Text or WhatsApp"}
-              </h3>
-              <div className="mt-2 flex gap-4">
-                <a href={`sms:${config.sms}`} className="text-amber-700 hover:underline">
-                  SMS
-                </a>
-                <a
-                  href={`https://wa.me/${config.whatsapp.replace(/\D/g, "")}`}
-                  className="text-amber-700 hover:underline"
-                >
-                  WhatsApp
-                </a>
-              </div>
-            </div>
-            <div>
-              <h3 className="font-semibold text-slate-900">
-                {isEs ? "Ubicación" : "Location"}
-              </h3>
-              <p className="mt-2 text-slate-600">{config.address}</p>
-              <p className="mt-1 text-slate-600">{config.hours}</p>
-            </div>
-            <div className="relative h-48 overflow-hidden rounded-xl">
-              <Image
-                src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&h=400&fit=crop"
-                alt="Metro Atlanta service area"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <TrustStrip config={config} locale={locale} />
+      <ContactSection locale={locale} config={config} />
     </>
   );
 }
@@ -91,7 +42,7 @@ export async function AboutPageView({ locale }: { locale: Locale }) {
       <section className="bg-navy py-20 text-white">
         <div className="mx-auto max-w-7xl px-4 lg:px-6">
           <h1 className="font-display text-4xl font-semibold md:text-5xl">
-            {isEs ? "Sobre Nosotros" : "About Martinez Built"}
+            {isEs ? "Sobre Nosotros" : "About Gutierrez Built"}
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-slate-300">{config.bilingualNote}</p>
         </div>
@@ -113,12 +64,12 @@ export async function AboutPageView({ locale }: { locale: Locale }) {
               {isEs ? (
                 <>
                   <p>
-                    Tino Martinez lleva más de 22 años construyendo en el área metropolitana de Atlanta
+                    Tino Gutierrez lleva más de 22 años construyendo en el área metropolitana de Atlanta
                     — desde ampliaciones residenciales hasta rehabilitación de alcantarillado municipal a
                     gran escala.
                   </p>
                   <p>
-                    Antes de fundar Martinez Built, pasó años en sistemas de alcantarillado sanitario,
+                    Antes de fundar Gutierrez Built, pasó años en sistemas de alcantarillado sanitario,
                     drenaje pluvial y líneas de agua para autoridades de agua y contratistas generales
                     comerciales. Esa experiencia subterránea informa cómo abordamos cimientos, drenaje y
                     trabajo de sitio en cada proyecto residencial.
@@ -132,11 +83,11 @@ export async function AboutPageView({ locale }: { locale: Locale }) {
               ) : (
                 <>
                   <p>
-                    Tino Martinez has spent 22+ years building across metro Atlanta — from residential
+                    Tino Gutierrez has spent 22+ years building across metro Atlanta — from residential
                     additions to large-scale municipal sewer rehabilitation.
                   </p>
                   <p>
-                    Before founding Martinez Built, he spent years on sanitary sewer, storm drainage, and
+                    Before founding Gutierrez Built, he spent years on sanitary sewer, storm drainage, and
                     water main systems for water authorities and commercial general contractors. That
                     underground experience informs how we approach foundations, drainage, and site work on
                     every residential project.
@@ -161,44 +112,6 @@ export async function AboutPageView({ locale }: { locale: Locale }) {
   );
 }
 
-export async function ProjectsPageView({ locale }: { locale: Locale }) {
-  const projects = await import("@/lib/content").then((m) => m.getProjects(locale));
-  const isEs = locale === "es";
-
-  return (
-    <section className="mx-auto max-w-7xl px-4 py-16 lg:px-6">
-      <h1 className="font-display text-4xl font-semibold">
-        {isEs ? "Nuestros Proyectos" : "Our Projects"}
-      </h1>
-      <p className="mt-2 max-w-2xl text-slate-600">
-        {isEs
-          ? "Trabajo real con detalles de alcance, ubicación y cronograma."
-          : "Real work with scope details, location, and timeline."}
-      </p>
-      <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project) => (
-          <Link
-            key={project.slug}
-            href={localePath(locale, `/projects/${project.slug}`)}
-            className="group overflow-hidden rounded-xl ring-1 ring-slate-200"
-          >
-            <div className="relative aspect-[4/3]">
-              <Image src={project.heroImage} alt={project.title} fill className="object-cover" />
-            </div>
-            <div className="p-5">
-              <span className="text-xs font-semibold uppercase text-amber-700">
-                {project.audience} · {project.city}
-              </span>
-              <h2 className="mt-1 font-semibold group-hover:text-amber-700">{project.title}</h2>
-              <p className="mt-2 text-sm text-slate-600">{project.summary}</p>
-            </div>
-          </Link>
-        ))}
-      </div>
-    </section>
-  );
-}
-
 export async function ProjectDetailView({
   locale,
   slug,
@@ -213,10 +126,15 @@ export async function ProjectDetailView({
     return <p className="p-16 text-center">Project not found</p>;
   }
 
-  const { BeforeAfterSlider } = await import("@/components/TrustStrip");
+  const { BeforeAfterPair } = await import("@/components/BeforeAfterPair");
 
   return (
     <article>
+      <div className="mx-auto max-w-4xl px-4 pt-6 lg:px-6">
+        <Suspense fallback={null}>
+          <ProjectBackLink locale={locale} />
+        </Suspense>
+      </div>
       <div className="relative h-64 md:h-96">
         <Image src={project.heroImage} alt={project.title} fill className="object-cover" priority />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
@@ -240,10 +158,12 @@ export async function ProjectDetailView({
               {isEs ? "Antes y Después" : "Before & After"}
             </h2>
             <div className="mt-4">
-              <BeforeAfterSlider
+              <BeforeAfterPair
                 before={project.beforeImage}
                 after={project.afterImage!}
                 alt={project.title}
+                beforeLabel={isEs ? "Antes" : "Before"}
+                afterLabel={isEs ? "Después" : "After"}
               />
             </div>
           </div>
@@ -279,6 +199,7 @@ export async function ProjectDetailView({
 
 export async function ResidentialPageView({ locale }: { locale: Locale }) {
   const services = (await getServices(locale)).filter((s) => s.group === "residential");
+  const projects = (await getProjects(locale)).filter((p) => p.audience === "residential");
   const config = await getSiteConfig(locale);
   const isEs = locale === "es";
 
@@ -302,8 +223,18 @@ export async function ResidentialPageView({ locale }: { locale: Locale }) {
           </p>
         </div>
       </section>
-      <TrustStrip config={config} />
+      <TrustStrip config={config} locale={locale} />
       <section className="mx-auto max-w-7xl px-4 py-16 lg:px-6">
+        <div className="mb-10">
+          <h2 className="font-display text-3xl font-semibold">
+            {isEs ? "Nuestros Servicios Residenciales" : "Our Residential Services"}
+          </h2>
+          <p className="mt-2 max-w-2xl text-slate-600">
+            {isEs
+              ? "Remodelaciones, ampliaciones y espacios exteriores — todo con un solo equipo y un solo contacto."
+              : "Remodels, additions, and outdoor living — all with one crew and one point of contact."}
+          </p>
+        </div>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {services.map((s) => (
             <div key={s.slug} className="overflow-hidden rounded-xl ring-1 ring-slate-200">
@@ -326,12 +257,32 @@ export async function ResidentialPageView({ locale }: { locale: Locale }) {
           </Link>
         </div>
       </section>
+      {projects.length > 0 && (
+        <section className="bg-slate-50 py-16">
+          <div className="mx-auto max-w-7xl px-4 lg:px-6">
+            <h2 className="font-display text-3xl font-semibold">
+              {isEs ? "Proyectos Residenciales" : "Residential Projects"}
+            </h2>
+            <p className="mt-2 max-w-2xl text-slate-600">
+              {isEs
+                ? "Trabajo real en hogares del área metropolitana de Atlanta."
+                : "Real work in homes across metro Atlanta."}
+            </p>
+            <div className="mt-10">
+              <ProjectGrid projects={projects} locale={locale} from="residential" />
+            </div>
+          </div>
+        </section>
+      )}
     </>
   );
 }
 
 export async function CommercialPageView({ locale }: { locale: Locale }) {
   const { commercialStats } = await import("@/data/news");
+  const projects = (await getProjects(locale)).filter(
+    (p) => p.audience === "commercial" || p.audience === "municipal",
+  );
   const config = await getSiteConfig(locale);
   const isEs = locale === "es";
   const stats = commercialStats[locale];
@@ -419,6 +370,23 @@ export async function CommercialPageView({ locale }: { locale: Locale }) {
           </div>
         </div>
       </section>
+      {projects.length > 0 && (
+        <section className="border-t border-slate-200 bg-slate-50 py-16">
+          <div className="mx-auto max-w-7xl px-4 lg:px-6">
+            <h2 className="font-display text-3xl font-semibold">
+              {isEs ? "Proyectos Comerciales y Municipales" : "Commercial & Municipal Projects"}
+            </h2>
+            <p className="mt-2 max-w-2xl text-slate-600">
+              {isEs
+                ? "Experiencia documentada en servicios subterráneos y sitios comerciales."
+                : "Documented experience on underground utility and commercial site work."}
+            </p>
+            <div className="mt-10">
+              <ProjectGrid projects={projects} locale={locale} from="commercial" />
+            </div>
+          </div>
+        </section>
+      )}
     </>
   );
 }

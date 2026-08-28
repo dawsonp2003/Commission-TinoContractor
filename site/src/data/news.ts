@@ -5,7 +5,7 @@ export const news = {
       title: "Level 1A Erosion Control Certification Complete",
       date: "2026-07-15",
       excerpt:
-        "Martinez Built has completed Georgia Level 1A erosion and sediment control certification — a requirement for commercial site work across the metro area.",
+        "Gutierrez Built has completed Georgia Level 1A erosion and sediment control certification — a requirement for commercial site work across the metro area.",
       image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&h=500&fit=crop",
     },
     {
@@ -31,7 +31,7 @@ export const news = {
       title: "Certificación Nivel 1A de Control de Erosión Completada",
       date: "2026-07-15",
       excerpt:
-        "Martinez Built ha completado la certificación Nivel 1A de erosión y sedimentación de Georgia — un requisito para trabajos comerciales en el área metropolitana.",
+        "Gutierrez Built ha completado la certificación Nivel 1A de erosión y sedimentación de Georgia — un requisito para trabajos comerciales en el área metropolitana.",
       image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&h=500&fit=crop",
     },
     {

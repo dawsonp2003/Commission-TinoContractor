@@ -10,7 +10,7 @@ export const testimonials = {
     },
     {
       quote:
-        "We've used three contractors before Martinez Built. This was the first time someone showed up when they said they would, every single day. The outdoor kitchen exceeded what we sketched on a napkin.",
+        "We've used three contractors before Gutierrez Built. This was the first time someone showed up when they said they would, every single day. The outdoor kitchen exceeded what we sketched on a napkin.",
       authorName: "David Okonkwo",
       city: "Lawrenceville, GA",
       projectType: "Outdoor Living",

@@ -10,8 +10,10 @@ import {
   getTestimonials,
 } from "@/lib/content";
 import { whyItems, processSteps } from "@/data/news";
-import { TrustStrip, BeforeAfterSlider } from "@/components/TrustStrip";
-import { ContactForm } from "@/components/ContactForm";
+import { TrustStrip } from "@/components/TrustStrip";
+import { BeforeAfterPair } from "@/components/BeforeAfterPair";
+import { ContactSection } from "@/components/ContactSection";
+import { projectHref } from "@/lib/projects";
 import { ArrowRight, Shield, Users, Wrench, Globe } from "lucide-react";
 
 export async function HomePage({ locale }: { locale: Locale }) {
@@ -54,7 +56,7 @@ export async function HomePage({ locale }: { locale: Locale }) {
             </a>
             <Link
               href={localePath(locale, "/contact")}
-              className="rounded-full border border-white/30 bg-white/10 px-6 py-3 text-sm font-semibold backdrop-blur transition hover:bg-white/20"
+              className="rounded-full border border-white/30 bg-white/10 px-6 py-3 text-sm font-semibold transition hover:bg-white/20"
             >
               {ui.cta.quote}
             </Link>
@@ -62,7 +64,7 @@ export async function HomePage({ locale }: { locale: Locale }) {
         </div>
       </section>
 
-      <TrustStrip config={config} />
+      <TrustStrip config={config} locale={locale} />
 
       <section className="mx-auto max-w-7xl px-4 py-16 lg:px-6">
         <div className="grid gap-6 md:grid-cols-2">
@@ -119,7 +121,7 @@ export async function HomePage({ locale }: { locale: Locale }) {
             {projects.map((project) => (
               <Link
                 key={project.slug}
-                href={localePath(locale, `/projects/${project.slug}`)}
+                href={projectHref(locale, project.slug, "home")}
                 className="group overflow-hidden rounded-xl bg-slate-50 ring-1 ring-slate-200 transition hover:shadow-lg"
               >
                 <div className="relative aspect-[4/3] overflow-hidden">
@@ -127,7 +129,7 @@ export async function HomePage({ locale }: { locale: Locale }) {
                     src={project.heroImage}
                     alt={project.title}
                     fill
-                    className="object-cover transition group-hover:scale-105"
+                    className="object-cover"
                   />
                 </div>
                 <div className="p-5">
@@ -139,14 +141,6 @@ export async function HomePage({ locale }: { locale: Locale }) {
                 </div>
               </Link>
             ))}
-          </div>
-          <div className="mt-8 text-center">
-            <Link
-              href={localePath(locale, "/projects")}
-              className="text-sm font-semibold text-amber-700 hover:underline"
-            >
-              {locale === "en" ? "View all projects" : "Ver todos los proyectos"} →
-            </Link>
           </div>
         </div>
       </section>
@@ -160,10 +154,12 @@ export async function HomePage({ locale }: { locale: Locale }) {
             {projects[0].title} — {projects[0].city}
           </p>
           <div className="mt-8">
-            <BeforeAfterSlider
+            <BeforeAfterPair
               before={projects[0].beforeImage!}
               after={projects[0].afterImage!}
               alt={projects[0].title}
+              beforeLabel={locale === "es" ? "Antes" : "Before"}
+              afterLabel={locale === "es" ? "Después" : "After"}
             />
           </div>
         </section>
@@ -176,11 +172,18 @@ export async function HomePage({ locale }: { locale: Locale }) {
             {services.map((service) => (
               <div
                 key={service.slug}
-                className="overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-200"
+                className="rounded-xl bg-white shadow-sm ring-1 ring-slate-200"
               >
-                <div className="relative h-40">
-                  <Image src={service.image} alt="" fill className="object-cover" />
-                </div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={service.image}
+                  alt=""
+                  width={600}
+                  height={160}
+                  className="h-40 w-full rounded-t-xl object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
                 <div className="p-5">
                   <h3 className="font-semibold text-slate-900">{service.name}</h3>
                   <p className="mt-1 text-sm text-slate-600">{service.shortDescription}</p>
@@ -214,7 +217,7 @@ export async function HomePage({ locale }: { locale: Locale }) {
           <h2 className="font-display text-center text-3xl font-semibold">{home.processTitle}</h2>
           <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {steps.map((step) => (
-              <div key={step.step} className="rounded-xl bg-white/5 p-6 backdrop-blur">
+              <div key={step.step} className="rounded-xl bg-white/5 p-6">
                 <span className="text-3xl font-bold text-amber-400">{step.step}</span>
                 <h3 className="mt-2 font-semibold">{step.title}</h3>
                 <p className="mt-2 text-sm text-slate-300">{step.description}</p>
@@ -262,15 +265,12 @@ export async function HomePage({ locale }: { locale: Locale }) {
         </div>
       </section>
 
-      <section className="py-16">
-        <div className="mx-auto max-w-3xl px-4 text-center lg:px-6">
-          <h2 className="font-display text-3xl font-semibold">{home.ctaTitle}</h2>
-          <p className="mt-2 text-slate-600">{home.ctaSubtitle}</p>
-          <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 text-left shadow-sm">
-            <ContactForm locale={locale} />
-          </div>
-        </div>
-      </section>
+      <ContactSection
+        locale={locale}
+        config={config}
+        title={home.ctaTitle}
+        subtitle={home.ctaSubtitle}
+      />
     </>
   );
 }

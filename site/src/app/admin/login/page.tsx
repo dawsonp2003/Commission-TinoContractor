@@ -34,7 +34,7 @@ export default function AdminLoginPage() {
         className="w-full max-w-sm rounded-2xl bg-white p-8 shadow-lg"
       >
         <h1 className="text-xl font-bold text-slate-900">Admin Login</h1>
-        <p className="mt-1 text-sm text-slate-500">Martinez Built demo admin</p>
+        <p className="mt-1 text-sm text-slate-500">Gutierrez Built LLC demo admin</p>
         <input
           type="password"
           value={password}

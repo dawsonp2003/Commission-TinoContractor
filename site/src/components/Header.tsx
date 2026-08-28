@@ -3,42 +3,39 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, Phone, X } from "lucide-react";
-import type { Locale } from "@/lib/i18n/config";
 import { localePath } from "@/lib/i18n/config";
+import { useLocale } from "@/lib/i18n/use-locale";
 import { getUi } from "@/lib/i18n/ui";
-import type { SiteConfig } from "@/lib/content";
+import { siteConfig } from "@/data/site-config";
 import { cn } from "@/lib/cn";
+import { BusinessName } from "@/components/BusinessName";
 
-type Props = {
-  locale: Locale;
-  config: SiteConfig;
-  path: string;
-};
-
-export function Header({ locale, config, path }: Props) {
+export function Header() {
+  const { locale } = useLocale();
+  const config = siteConfig[locale];
   const ui = getUi(locale);
   const [open, setOpen] = useState(false);
 
   const links = [
+    { href: "/", label: ui.nav.home },
     { href: "/residential", label: ui.nav.residential },
     { href: "/commercial", label: ui.nav.commercial },
-    { href: "/projects", label: ui.nav.projects },
     { href: "/about", label: ui.nav.about },
-    { href: "/pricing", label: ui.nav.pricing },
     { href: "/reviews", label: ui.nav.reviews },
     { href: "/news", label: ui.nav.news },
     { href: "/contact", label: ui.nav.contact },
   ];
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 lg:px-6">
         <Link href={localePath(locale, "/")} className="flex flex-col">
-          <span className="text-lg font-bold tracking-tight text-slate-900">
-            {config.businessName}
-          </span>
+          <BusinessName
+            name={config.businessName}
+            className="text-lg font-bold tracking-tight text-slate-900"
+          />
           <span className="text-xs text-amber-700">
-            GA Lic. {config.licenseNumber}
+            {ui.trust.licensePrefix} {config.licenseNumber}
           </span>
         </Link>
 

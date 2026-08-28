@@ -1,35 +1,21 @@
-"use client";
-
-import {
-  ReactCompareSlider,
-  ReactCompareSliderImage,
-} from "react-compare-slider";
 import type { SiteConfig } from "@/lib/content";
+import type { Locale } from "@/lib/i18n/config";
+import { getUi } from "@/lib/i18n/ui";
 
-type Props = {
-  before: string;
-  after: string;
-  alt: string;
-};
+export function TrustStrip({
+  config,
+  locale,
+}: {
+  config: SiteConfig;
+  locale: Locale;
+}) {
+  const t = getUi(locale).trust as Record<string, string>;
 
-export function BeforeAfterSlider({ before, after, alt }: Props) {
-  return (
-    <div className="overflow-hidden rounded-xl shadow-lg">
-      <ReactCompareSlider
-        itemOne={<ReactCompareSliderImage src={before} alt={`${alt} before`} />}
-        itemTwo={<ReactCompareSliderImage src={after} alt={`${alt} after`} />}
-        className="aspect-[4/3] w-full"
-      />
-    </div>
-  );
-}
-
-export function TrustStrip({ config }: { config: SiteConfig }) {
   const items = [
-    `${config.googleRating} ★ Google · ${config.googleReviewCount} Reviews`,
-    `${config.projectCount}+ Projects`,
-    `GA Lic. ${config.licenseNumber}`,
-    `${config.yearsExperience} Years`,
+    `${config.googleRating} ★ Google · ${config.googleReviewCount} ${t.reviews}`,
+    `${config.projectCount}+ ${t.projects}`,
+    `${t.licensePrefix} ${config.licenseNumber}`,
+    `${config.yearsExperience} ${t.years}`,
     config.warrantyTerm,
   ];
 

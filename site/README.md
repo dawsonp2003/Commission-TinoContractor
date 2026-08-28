@@ -1,4 +1,4 @@
-# Martinez Built — Demo Contractor Site
+# Gutierrez Built — Demo Contractor Site
 
 A bilingual (English/Spanish) demo website for Tino's contractor business, built from the research in `/docs`.
 
@@ -46,7 +46,7 @@ Optional: set `LIBRETRANSLATE_URL` for real translation in the admin panel (othe
 
 ## Content
 
-All demo content uses placeholder business name **Martinez Built LLC** with fake license numbers, phone numbers, and Unsplash photos. Tino can replace everything via the admin panel or by editing files in `src/data/`.
+All demo content uses placeholder business name **Gutierrez Built LLC** with fake license numbers, phone numbers, and Unsplash photos. Tino can replace everything via the admin panel or by editing files in `src/data/`.
 
 ## Inspired By
 
