@@ -8,6 +8,7 @@ import { ContactSection } from "@/components/ContactSection";
 import { TrustStrip } from "@/components/TrustStrip";
 import { ProjectGrid } from "@/components/ProjectGrid";
 import { ProjectBackLink } from "@/components/ProjectBackLink";
+import { images } from "@/data/images";
 
 export async function ContactPageView({ locale }: { locale: Locale }) {
   const config = await getSiteConfig(locale);
@@ -51,7 +52,7 @@ export async function AboutPageView({ locale }: { locale: Locale }) {
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
             <Image
-              src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800&h=1000&fit=crop"
+              src={images.contractorPortrait}
               alt={config.ownerName}
               fill
               className="object-cover"
@@ -207,7 +208,7 @@ export async function ResidentialPageView({ locale }: { locale: Locale }) {
     <>
       <section className="relative bg-navy py-20 text-white">
         <Image
-          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&h=600&fit=crop"
+          src={images.houseExterior}
           alt=""
           fill
           className="object-cover opacity-25"

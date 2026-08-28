@@ -1,3 +1,4 @@
+import { images } from "@/data/images";
 import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n/config";
@@ -32,7 +33,7 @@ export async function HomePage({ locale }: { locale: Locale }) {
       <section className="relative overflow-hidden bg-navy text-white">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&h=900&fit=crop"
+            src={images.heroConstruction}
             alt=""
             fill
             className="object-cover opacity-30"
@@ -73,7 +74,7 @@ export async function HomePage({ locale }: { locale: Locale }) {
             className="group relative overflow-hidden rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200 transition hover:shadow-md"
           >
             <Image
-              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=500&fit=crop"
+              src={images.houseExterior}
               alt=""
               width={800}
               height={500}
@@ -91,19 +92,24 @@ export async function HomePage({ locale }: { locale: Locale }) {
           </Link>
           <Link
             href={localePath(locale, "/commercial")}
-            className="group relative overflow-hidden rounded-2xl bg-slate-900 p-8 text-white shadow-sm transition hover:shadow-md"
+            className="group relative overflow-hidden rounded-2xl bg-slate-900 p-8 text-white shadow-sm ring-1 ring-slate-800 transition duration-300 hover:bg-slate-800 hover:shadow-lg hover:ring-amber-500/50"
           >
             <Image
-              src="https://images.unsplash.com/photo-1581094271901-ef2a9acb7a2e?w=800&h=500&fit=crop"
+              src={images.industrial}
               alt=""
               width={800}
               height={500}
-              className="absolute inset-0 h-full w-full object-cover opacity-30"
+              className="absolute inset-0 h-full w-full object-cover opacity-25 transition duration-300 group-hover:scale-105 group-hover:opacity-45"
             />
+            <div className="absolute inset-0 bg-slate-900/50 transition duration-300 group-hover:bg-slate-900/30" />
             <div className="relative">
-              <h2 className="font-display text-2xl font-semibold">{home.audienceCommercial}</h2>
-              <p className="mt-2 text-slate-300">{home.audienceCommercialDesc}</p>
-              <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-amber-400">
+              <h2 className="font-display text-2xl font-semibold transition group-hover:text-amber-50">
+                {home.audienceCommercial}
+              </h2>
+              <p className="mt-2 text-slate-300 transition group-hover:text-slate-200">
+                {home.audienceCommercialDesc}
+              </p>
+              <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-amber-400 transition group-hover:text-amber-300">
                 {locale === "en" ? "Learn more" : "Más información"}{" "}
                 <ArrowRight className="h-4 w-4" />
               </span>

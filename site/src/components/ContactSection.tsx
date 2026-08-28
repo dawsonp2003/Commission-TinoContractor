@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { Locale } from "@/lib/i18n/config";
 import type { SiteConfig } from "@/lib/content";
 import { ContactForm } from "@/components/ContactForm";
+import { images } from "@/data/images";
 
 type Props = {
   locale: Locale;
@@ -69,7 +70,7 @@ export function ContactSection({ locale, config, title, subtitle }: Props) {
           </div>
           <div className="relative h-48 overflow-hidden rounded-xl">
             <Image
-              src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&h=400&fit=crop"
+              src={images.mapAtlanta}
               alt="Metro Atlanta service area"
               fill
               className="object-cover"

@@ -1,3 +1,5 @@
+import { images } from "./images";
+
 export const projects = {
   en: [
     {
@@ -12,11 +14,11 @@ export const projects = {
       sizeSqFt: 1200,
       valueRange: "$85K – $120K",
       heroImage:
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=800&fit=crop",
+        images.houseExterior,
       beforeImage:
-        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=600&fit=crop",
+        images.houseBefore,
       afterImage:
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop",
+        images.houseExterior,
       scopeOfWork: [
         "Foundation and framing for 1,200 sq ft addition",
         "New kitchen layout with quartz counters",
@@ -38,11 +40,11 @@ export const projects = {
       durationWeeks: 8,
       valueRange: "$45K – $65K",
       heroImage:
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&h=800&fit=crop",
+        images.outdoorLiving,
       beforeImage:
-        "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&h=600&fit=crop",
+        images.outdoorBefore,
       afterImage:
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop",
+        images.outdoorLiving,
       scopeOfWork: [
         "Steel-post carport structure",
         "Outdoor kitchen with sink, gas line, and stone counters",
@@ -61,11 +63,11 @@ export const projects = {
       durationWeeks: 6,
       valueRange: "$38K – $52K",
       heroImage:
-        "https://images.unsplash.com/photo-1556912173-46c336c7fd55?w=1200&h=800&fit=crop",
+        images.kitchen,
       beforeImage:
-        "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=800&h=600&fit=crop",
+        images.kitchenBefore,
       afterImage:
-        "https://images.unsplash.com/photo-1556912173-46c336c7fd55?w=800&h=600&fit=crop",
+        images.kitchen,
       scopeOfWork: [
         "Wall removal and structural beam",
         "Semi-custom shaker cabinets",
@@ -83,7 +85,7 @@ export const projects = {
       year: 2022,
       durationWeeks: 3,
       heroImage:
-        "https://images.unsplash.com/photo-1581094271901-ef2a9acb7a2e?w=1200&h=800&fit=crop",
+        images.industrial,
       scopeOfWork: [
         "24/7 emergency mobilization",
         "Excavation and pipe replacement on 12\" sanitary main",
@@ -105,7 +107,7 @@ export const projects = {
       durationWeeks: 5,
       valueRange: "$120K – $180K",
       heroImage:
-        "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=800&fit=crop",
+        images.heroConstruction,
       scopeOfWork: [
         "Storm drainage system with detention tie-in",
         "Sanitary sewer lateral and grease interceptor",
@@ -124,11 +126,11 @@ export const projects = {
       durationWeeks: 4,
       valueRange: "$28K – $42K",
       heroImage:
-        "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200&h=800&fit=crop",
+        images.bathroom,
       beforeImage:
-        "https://images.unsplash.com/photo-1584622650116-1d0a738f4d78?w=800&h=600&fit=crop",
+        images.bathroomBefore,
       afterImage:
-        "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=800&h=600&fit=crop",
+        images.bathroom,
       scopeOfWork: [
         "Custom tile walk-in shower with frameless glass",
         "Heated porcelain floor",
@@ -150,11 +152,11 @@ export const projects = {
       sizeSqFt: 1200,
       valueRange: "$85K – $120K",
       heroImage:
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=800&fit=crop",
+        images.houseExterior,
       beforeImage:
-        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=600&fit=crop",
+        images.houseBefore,
       afterImage:
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop",
+        images.houseExterior,
       scopeOfWork: [
         "Cimentación y estructura para ampliación de 1,200 pies²",
         "Nueva distribución de cocina con encimeras de cuarzo",
@@ -176,11 +178,11 @@ export const projects = {
       durationWeeks: 8,
       valueRange: "$45K – $65K",
       heroImage:
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&h=800&fit=crop",
+        images.outdoorLiving,
       beforeImage:
-        "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&h=600&fit=crop",
+        images.outdoorBefore,
       afterImage:
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop",
+        images.outdoorLiving,
       scopeOfWork: [
         "Estructura de cochera con postes de acero",
         "Cocina exterior con fregadero, gas y encimeras de piedra",
@@ -199,11 +201,11 @@ export const projects = {
       durationWeeks: 6,
       valueRange: "$38K – $52K",
       heroImage:
-        "https://images.unsplash.com/photo-1556912173-46c336c7fd55?w=1200&h=800&fit=crop",
+        images.kitchen,
       beforeImage:
-        "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=800&h=600&fit=crop",
+        images.kitchenBefore,
       afterImage:
-        "https://images.unsplash.com/photo-1556912173-46c336c7fd55?w=800&h=600&fit=crop",
+        images.kitchen,
       scopeOfWork: [
         "Eliminación de muro y viga estructural",
         "Gabinetes shaker semi-personalizados",
@@ -221,7 +223,7 @@ export const projects = {
       year: 2022,
       durationWeeks: 3,
       heroImage:
-        "https://images.unsplash.com/photo-1581094271901-ef2a9acb7a2e?w=1200&h=800&fit=crop",
+        images.industrial,
       scopeOfWork: [
         "Movilización de emergencia 24/7",
         "Excavación y reemplazo de tubería de 12\"",
@@ -243,7 +245,7 @@ export const projects = {
       durationWeeks: 5,
       valueRange: "$120K – $180K",
       heroImage:
-        "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=800&fit=crop",
+        images.heroConstruction,
       scopeOfWork: [
         "Sistema de drenaje pluvial con detención",
         "Lateral sanitario e interceptor de grasa",
@@ -262,11 +264,11 @@ export const projects = {
       durationWeeks: 4,
       valueRange: "$28K – $42K",
       heroImage:
-        "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200&h=800&fit=crop",
+        images.bathroom,
       beforeImage:
-        "https://images.unsplash.com/photo-1584622650116-1d0a738f4d78?w=800&h=600&fit=crop",
+        images.bathroomBefore,
       afterImage:
-        "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=800&h=600&fit=crop",
+        images.bathroom,
       scopeOfWork: [
         "Ducha walk-in con azulejo personalizado y vidrio sin marco",
         "Piso de porcelanato con calefacción",

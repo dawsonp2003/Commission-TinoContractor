@@ -1,3 +1,5 @@
+import { images } from "./images";
+
 export const services = {
   en: [
     {
@@ -6,7 +8,7 @@ export const services = {
       shortDescription: "Expand your home with seamless additions tied to your existing structure.",
       group: "residential",
       icon: "home",
-      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop",
+      image: images.houseExterior,
     },
     {
       slug: "kitchens-baths",
@@ -14,7 +16,7 @@ export const services = {
       shortDescription: "Full remodels from refresh to down-to-the-studs transformations.",
       group: "residential",
       icon: "bath",
-      image: "https://images.unsplash.com/photo-1556912173-46c336c7fd55?w=600&h=400&fit=crop",
+      image: images.kitchen,
     },
     {
       slug: "outdoor-living",
@@ -22,7 +24,7 @@ export const services = {
       shortDescription: "Kitchens, carports, decks, and covered entertaining spaces.",
       group: "residential",
       icon: "tree",
-      image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop",
+      image: images.outdoorLiving,
     },
     {
       slug: "roofing-exterior",
@@ -30,7 +32,7 @@ export const services = {
       shortDescription: "Roof repairs, siding, gutters, and exterior refreshes.",
       group: "residential",
       icon: "roof",
-      image: "https://images.unsplash.com/photo-1632775245160-791bacdc4f54?w=600&h=400&fit=crop",
+      image: images.roofing,
     },
     {
       slug: "repairs-maintenance",
@@ -38,7 +40,7 @@ export const services = {
       shortDescription: "Drywall, painting, small repairs — no job too small to do right.",
       group: "residential",
       icon: "wrench",
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=400&fit=crop",
+      image: images.heroConstruction,
     },
     {
       slug: "underground-utilities",
@@ -46,7 +48,7 @@ export const services = {
       shortDescription: "Sanitary sewer, storm drainage, and water main — commercial and municipal.",
       group: "commercial",
       icon: "pipe",
-      image: "https://images.unsplash.com/photo-1581094271901-ef2a9acb7a2e?w=600&h=400&fit=crop",
+      image: images.industrial,
     },
   ],
   es: [
@@ -56,7 +58,7 @@ export const services = {
       shortDescription: "Amplíe su hogar con adiciones integradas a su estructura existente.",
       group: "residential",
       icon: "home",
-      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop",
+      image: images.houseExterior,
     },
     {
       slug: "kitchens-baths",
@@ -64,7 +66,7 @@ export const services = {
       shortDescription: "Remodelaciones completas desde actualización hasta transformación total.",
       group: "residential",
       icon: "bath",
-      image: "https://images.unsplash.com/photo-1556912173-46c336c7fd55?w=600&h=400&fit=crop",
+      image: images.kitchen,
     },
     {
       slug: "outdoor-living",
@@ -72,7 +74,7 @@ export const services = {
       shortDescription: "Cocinas exteriores, cocheras, terrazas y espacios cubiertos.",
       group: "residential",
       icon: "tree",
-      image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop",
+      image: images.outdoorLiving,
     },
     {
       slug: "roofing-exterior",
@@ -80,7 +82,7 @@ export const services = {
       shortDescription: "Reparación de techos, revestimiento, canaletas y renovación exterior.",
       group: "residential",
       icon: "roof",
-      image: "https://images.unsplash.com/photo-1632775245160-791bacdc4f54?w=600&h=400&fit=crop",
+      image: images.roofing,
     },
     {
       slug: "repairs-maintenance",
@@ -88,7 +90,7 @@ export const services = {
       shortDescription: "Drywall, pintura, reparaciones menores — ningún trabajo es muy pequeño.",
       group: "residential",
       icon: "wrench",
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=400&fit=crop",
+      image: images.heroConstruction,
     },
     {
       slug: "underground-utilities",
@@ -96,7 +98,7 @@ export const services = {
       shortDescription: "Alcantarillado sanitario, drenaje pluvial y líneas de agua — comercial y municipal.",
       group: "commercial",
       icon: "pipe",
-      image: "https://images.unsplash.com/photo-1581094271901-ef2a9acb7a2e?w=600&h=400&fit=crop",
+      image: images.industrial,
     },
   ],
 };

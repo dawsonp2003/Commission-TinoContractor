@@ -1,3 +1,5 @@
+import { images } from "./images";
+
 export const news = {
   en: [
     {
@@ -6,7 +8,7 @@ export const news = {
       date: "2026-07-15",
       excerpt:
         "Gutierrez Built has completed Georgia Level 1A erosion and sediment control certification — a requirement for commercial site work across the metro area.",
-      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&h=500&fit=crop",
+      image: images.newsSiteWork,
     },
     {
       slug: "community-ramp-build",
@@ -14,7 +16,7 @@ export const news = {
       date: "2026-05-22",
       excerpt:
         "Our crew donated a weekend to build an ADA-accessible ramp for a Lawrenceville family — because the work doesn't stop at the job site.",
-      image: "https://images.unsplash.com/photo-1593113598142-0505b3e5fe1c?w=800&h=500&fit=crop",
+      image: images.newsCommunity,
     },
     {
       slug: "bilingual-service",
@@ -22,7 +24,7 @@ export const news = {
       date: "2026-03-10",
       excerpt:
         "For many of our clients, Spanish isn't a preference — it's how they make the biggest financial decision of their lives. Here's how we built that into every project.",
-      image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&h=500&fit=crop",
+      image: images.newsTeam,
     },
   ],
   es: [
@@ -32,7 +34,7 @@ export const news = {
       date: "2026-07-15",
       excerpt:
         "Gutierrez Built ha completado la certificación Nivel 1A de erosión y sedimentación de Georgia — un requisito para trabajos comerciales en el área metropolitana.",
-      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&h=500&fit=crop",
+      image: images.newsSiteWork,
     },
     {
       slug: "community-ramp-build",
@@ -40,7 +42,7 @@ export const news = {
       date: "2026-05-22",
       excerpt:
         "Nuestro equipo donó un fin de semana para construir una rampa accesible ADA para una familia en Lawrenceville.",
-      image: "https://images.unsplash.com/photo-1593113598142-0505b3e5fe1c?w=800&h=500&fit=crop",
+      image: images.newsCommunity,
     },
     {
       slug: "bilingual-service",
@@ -48,7 +50,7 @@ export const news = {
       date: "2026-03-10",
       excerpt:
         "Para muchos de nuestros clientes, el español no es una preferencia — es cómo toman la decisión financiera más grande de sus vidas.",
-      image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&h=500&fit=crop",
+      image: images.newsTeam,
     },
   ],
 };
