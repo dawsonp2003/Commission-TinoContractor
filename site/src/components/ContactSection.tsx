@@ -1,6 +1,7 @@
 import type { Locale } from "@/lib/i18n/config";
 import type { SiteConfig } from "@/lib/content";
 import { ContactForm } from "@/components/ContactForm";
+import { ServiceAreaTags } from "@/components/ServiceAreaTags";
 
 type Props = {
   locale: Locale;
@@ -27,7 +28,7 @@ export function ContactSection({ locale, config, title, subtitle }: Props) {
           <div className="space-y-8">
             <div>
               <h3 className="font-semibold text-slate-900">
-                {isEs ? "Llámenos" : "Call Us"}
+                {isEs ? "Llame" : "Call"}
               </h3>
               <a
                 href={`tel:${config.phone}`}
@@ -64,14 +65,7 @@ export function ContactSection({ locale, config, title, subtitle }: Props) {
               <h3 className="font-semibold text-slate-900">
                 {isEs ? "Área de Servicio" : "Service Area"}
               </h3>
-              <ul className="mt-3 space-y-2 text-slate-600">
-                {config.serviceAreaCities.map((city) => (
-                  <li key={city} className="flex items-center gap-2">
-                    <span className="h-1.5 w-1.5 rounded-full bg-amber-600" />
-                    {city}, GA
-                  </li>
-                ))}
-              </ul>
+              <ServiceAreaTags cities={config.serviceAreaCities} />
             </div>
           </div>
           <div>

@@ -24,19 +24,24 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  overflow-x: hidden;
+  overflow-x: clip;
+}
+
+.pb-safe {
+  padding-bottom: calc(4.5rem + env(safe-area-inset-bottom, 0px));
+}
+
+.pb-safe-footer {
+  padding-bottom: calc(4.5rem + env(safe-area-inset-bottom, 0px));
+}
+
+@media (min-width: 768px) {
+  .pb-safe,
+  .pb-safe-footer {
+    padding-bottom: 0;
+  }
 }
 
 .font-display {
   font-family: var(--font-display);
-}
-
-.pb-safe {
-  padding-bottom: 4.5rem;
-}
-
-@media (min-width: 768px) {
-  .pb-safe {
-    padding-bottom: 0;
-  }
 }

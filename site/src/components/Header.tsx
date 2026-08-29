@@ -19,8 +19,8 @@ export function Header() {
 
   const links = [
     { id: "home", label: ui.nav.home },
-    { id: "about", label: ui.nav.about },
     { id: "projects", label: ui.nav.projects },
+    { id: "about", label: ui.nav.about },
     { id: "contact", label: ui.nav.contact },
   ];
 

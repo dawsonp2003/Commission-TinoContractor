@@ -8,12 +8,12 @@ export default function SiteLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
+    <div className="flex min-h-full flex-col">
       <LanguageProvider />
       <Header />
       <main className="flex-1 pb-safe">{children}</main>
       <Footer />
       <MobileCallBar />
-    </>
+    </div>
   );
 }

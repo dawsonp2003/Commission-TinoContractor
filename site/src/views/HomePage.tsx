@@ -5,7 +5,9 @@ import { getUi } from "@/lib/i18n/ui";
 import { getSiteConfig, getProjects } from "@/lib/content";
 import { experienceStats } from "@/data/experience";
 import { ContactSection } from "@/components/ContactSection";
+import { ProjectGrid } from "@/components/ProjectGrid";
 import { sectionHref } from "@/lib/sections";
+import { BusinessName } from "@/components/BusinessName";
 
 export function HomePage({ locale }: { locale: Locale }) {
   const ui = getUi(locale);
@@ -29,11 +31,16 @@ export function HomePage({ locale }: { locale: Locale }) {
         </div>
         <div className="relative mx-auto max-w-7xl px-4 pb-10 pt-20 lg:px-6 lg:pb-12 lg:pt-24">
           <div>
-            <h1 className="font-display max-w-4xl text-4xl font-semibold leading-tight md:text-5xl lg:text-6xl">
+            <p className="text-sm font-semibold tracking-wide text-amber-400">
+              {config.ownerName}
+            </p>
+            <h1 className="font-display mt-2 max-w-4xl text-4xl font-semibold leading-tight md:text-5xl lg:text-6xl">
               {config.tagline}
             </h1>
-            <p className="mt-4 max-w-2xl text-lg font-medium text-amber-400">{config.mission}</p>
-            <p className="mt-4 max-w-2xl text-lg text-slate-200">{home.heroSubtitle}</p>
+            <p className="mt-2 text-base font-medium text-slate-300">
+              <BusinessName name={config.businessName} />
+            </p>
+            <p className="mt-4 max-w-2xl text-lg text-slate-200">{config.mission}</p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href={`tel:${config.phone}`}
@@ -61,6 +68,25 @@ export function HomePage({ locale }: { locale: Locale }) {
         </div>
       </section>
 
+      <section className="border-b border-slate-200 bg-slate-50 py-14">
+        <div className="mx-auto max-w-3xl px-4 text-center lg:px-6">
+          <h2 className="font-display text-2xl font-semibold text-slate-900 md:text-3xl">
+            {home.missionStatementTitle}
+          </h2>
+          <p className="mt-4 text-lg leading-relaxed text-slate-600">{home.missionStatement}</p>
+        </div>
+      </section>
+
+      <section id="projects" className="scroll-mt-20 bg-white py-16">
+        <div className="mx-auto max-w-7xl px-4 lg:px-6">
+          <h2 className="font-display text-3xl font-semibold text-slate-900">
+            {home.projectsTitle}
+          </h2>
+          <p className="mt-2 max-w-2xl text-slate-600">{home.projectsNote}</p>
+          <ProjectGrid locale={locale} projects={projects} />
+        </div>
+      </section>
+
       <section id="about" className="mx-auto max-w-7xl scroll-mt-20 px-4 py-16 lg:px-6">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
@@ -79,39 +105,6 @@ export function HomePage({ locale }: { locale: Locale }) {
               <p>{about.p3}</p>
               <p>{about.p4}</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" className="scroll-mt-20 bg-white py-16">
-        <div className="mx-auto max-w-7xl px-4 lg:px-6">
-          <h2 className="font-display text-3xl font-semibold text-slate-900">
-            {home.projectsTitle}
-          </h2>
-          <p className="mt-2 max-w-2xl text-slate-600">{home.projectsNote}</p>
-          <div className="mt-10 grid gap-8 lg:grid-cols-3">
-            {projects.map((project) => (
-              <article
-                key={project.slug}
-                className="overflow-hidden rounded-xl bg-slate-50 ring-1 ring-slate-200"
-              >
-                <div className="relative aspect-[4/3] overflow-hidden">
-                  <Image
-                    src={project.heroImage}
-                    alt={project.title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-5">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-amber-700">
-                    {project.city} · {project.year}
-                  </p>
-                  <h3 className="mt-1 font-semibold text-slate-900">{project.title}</h3>
-                  <p className="mt-2 text-sm text-slate-600">{project.summary}</p>
-                </div>
-              </article>
-            ))}
           </div>
         </div>
       </section>

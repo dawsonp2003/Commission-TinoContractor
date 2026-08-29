@@ -15,11 +15,17 @@ const fraunces = Fraunces({
 
 export const metadata: Metadata = {
   title: {
-    default: "TGR Utility Subcontractor LLC | Wet Utility Subcontractor",
+    default: "TGR Utility Subcontractor LLC | Underground Utility Subcontractor",
     template: "%s | TGR Utility Subcontractor LLC",
   },
   description:
-    "Tino Gutierrez — Underground Wet Utility Subcontractor for general contractors in west Georgia and metro Atlanta. Sanitary, storm, and water. Bilingual EN/ES.",
+    "Tino Gutierrez — Underground utility subcontractor for general contractors in west Georgia and metro Atlanta. Sanitary, storm, and water. Bilingual EN/ES.",
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover" as const,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

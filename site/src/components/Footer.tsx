@@ -1,11 +1,14 @@
 "use client";
 
+import { createPortal } from "react-dom";
+import { useEffect, useState } from "react";
 import { Phone, MessageCircle } from "lucide-react";
 import { sectionHref } from "@/lib/sections";
 import { useLocale } from "@/lib/i18n/use-locale";
 import { getUi } from "@/lib/i18n/ui";
 import { siteConfig } from "@/data/site-config";
 import { BusinessName } from "@/components/BusinessName";
+import { ServiceAreaTags } from "@/components/ServiceAreaTags";
 
 export function Footer() {
   const { locale } = useLocale();
@@ -14,7 +17,7 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-auto border-t border-slate-200 bg-slate-900 text-slate-300">
+    <footer className="mt-auto border-t border-slate-200 bg-slate-900 pb-safe-footer text-slate-300 md:pb-0">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-3 lg:px-6">
         <div>
           <p className="text-lg font-bold text-white">
@@ -25,11 +28,9 @@ export function Footer() {
         </div>
         <div>
           <p className="font-semibold text-white">{ui.footer.serviceArea}</p>
-          <ul className="mt-2 space-y-1 text-sm">
-            {config.serviceAreaCities.map((city) => (
-              <li key={city}>{city}, GA</li>
-            ))}
-          </ul>
+          <div className="mt-2 [&_span]:bg-slate-800 [&_span]:text-slate-200">
+            <ServiceAreaTags cities={config.serviceAreaCities} />
+          </div>
         </div>
         <div>
           <p className="font-semibold text-white">{ui.footer.contact}</p>
@@ -68,9 +69,17 @@ export function MobileCallBar() {
   const { locale } = useLocale();
   const config = siteConfig[locale];
   const ui = getUi(locale);
+  const [mounted, setMounted] = useState(false);
 
-  return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 grid grid-cols-3 border-t border-slate-200 bg-white shadow-lg md:hidden">
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const bar = (
+    <div
+      className="fixed inset-x-0 bottom-0 z-[60] grid grid-cols-3 border-t border-slate-200 bg-white shadow-[0_-4px_20px_rgba(0,0,0,0.08)] md:hidden"
+      style={{ paddingBottom: "env(safe-area-inset-bottom, 0px)" }}
+    >
       <a
         href={`tel:${config.phone}`}
         className="flex flex-col items-center gap-1 py-3 text-xs font-semibold text-slate-800"
@@ -96,4 +105,7 @@ export function MobileCallBar() {
       </a>
     </div>
   );
+
+  if (!mounted) return null;
+  return createPortal(bar, document.body);
 }
