@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, Phone, X } from "lucide-react";
 import { localePath } from "@/lib/i18n/config";
+import { sectionHref } from "@/lib/sections";
 import { useLocale } from "@/lib/i18n/use-locale";
 import { getUi } from "@/lib/i18n/ui";
 import { siteConfig } from "@/data/site-config";
@@ -17,13 +18,10 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   const links = [
-    { href: "/", label: ui.nav.home },
-    { href: "/residential", label: ui.nav.residential },
-    { href: "/commercial", label: ui.nav.commercial },
-    { href: "/about", label: ui.nav.about },
-    { href: "/reviews", label: ui.nav.reviews },
-    { href: "/news", label: ui.nav.news },
-    { href: "/contact", label: ui.nav.contact },
+    { id: "home", label: ui.nav.home },
+    { id: "about", label: ui.nav.about },
+    { id: "projects", label: ui.nav.projects },
+    { id: "contact", label: ui.nav.contact },
   ];
 
   return (
@@ -34,20 +32,18 @@ export function Header() {
             name={config.businessName}
             className="text-lg font-bold tracking-tight text-slate-900"
           />
-          <span className="text-xs text-amber-700">
-            {ui.trust.licensePrefix} {config.licenseNumber}
-          </span>
+          <span className="text-xs text-amber-700">{config.ownerName}</span>
         </Link>
 
         <nav className="hidden items-center gap-6 lg:flex">
           {links.map((link) => (
-            <Link
-              key={link.href}
-              href={localePath(locale, link.href)}
+            <a
+              key={link.id}
+              href={sectionHref(locale, link.id)}
               className="text-sm font-medium text-slate-600 transition hover:text-amber-700"
             >
               {link.label}
-            </Link>
+            </a>
           ))}
         </nav>
 
@@ -59,12 +55,12 @@ export function Header() {
             <Phone className="h-4 w-4" />
             {config.phoneDisplay}
           </a>
-          <Link
-            href={localePath(locale, "/contact")}
+          <a
+            href={sectionHref(locale, "contact")}
             className="hidden rounded-full bg-amber-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-amber-700 md:inline-flex"
           >
-            {ui.cta.quote}
-          </Link>
+            {ui.cta.contact}
+          </a>
           <button
             type="button"
             className="rounded-lg p-2 text-slate-700 lg:hidden"
@@ -84,14 +80,14 @@ export function Header() {
       >
         <nav className="flex flex-col px-4 py-3">
           {links.map((link) => (
-            <Link
-              key={link.href}
-              href={localePath(locale, link.href)}
+            <a
+              key={link.id}
+              href={sectionHref(locale, link.id)}
               className="border-b border-slate-50 py-3 text-sm font-medium text-slate-700"
               onClick={() => setOpen(false)}
             >
               {link.label}
-            </Link>
+            </a>
           ))}
           <a
             href={`tel:${config.phone}`}

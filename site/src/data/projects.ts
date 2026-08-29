@@ -1,280 +1,153 @@
 import { images } from "./images";
 
-export const projects = {
-  en: [
-    {
-      slug: "whole-home-expansion-duluth",
-      title: "Whole-Home Expansion",
-      summary: "Doubled livable square footage with a seamless addition tied into the existing structure.",
-      audience: "residential" as const,
-      categories: ["Additions & New Builds"],
-      city: "Duluth, GA",
-      year: 2024,
-      durationWeeks: 14,
-      sizeSqFt: 1200,
-      valueRange: "$85K – $120K",
-      heroImage:
-        images.houseExterior,
-      beforeImage:
-        images.houseBefore,
-      afterImage:
-        images.houseExterior,
-      scopeOfWork: [
-        "Foundation and framing for 1,200 sq ft addition",
-        "New kitchen layout with quartz counters",
-        "Electrical panel upgrade (coordinated licensed electrician)",
-        "Permits pulled and inspections managed",
-      ],
-      challenge: "The existing 1978 ranch had limited load-bearing options for an open floor plan.",
-      solution:
-        "Engineered beam installation allowed a wall removal that transformed the main living area while keeping the addition visually consistent with the original home.",
-    },
-    {
-      slug: "outdoor-kitchen-carport",
-      title: "Outdoor Kitchen & 4-Car Carport",
-      summary: "Covered outdoor living with full kitchen, roof structure, and a four-vehicle carport.",
-      audience: "residential" as const,
-      categories: ["Outdoor Living"],
-      city: "Lawrenceville, GA",
-      year: 2023,
-      durationWeeks: 8,
-      valueRange: "$45K – $65K",
-      heroImage:
-        images.outdoorLiving,
-      beforeImage:
-        images.outdoorBefore,
-      afterImage:
-        images.outdoorLiving,
-      scopeOfWork: [
-        "Steel-post carport structure",
-        "Outdoor kitchen with sink, gas line, and stone counters",
-        "Cedar ceiling and LED lighting",
-        "Drainage grading and paver patio",
-      ],
-    },
-    {
-      slug: "kitchen-remodel-roswell",
-      title: "Kitchen Remodel — Open Concept",
-      summary: "Gutted galley kitchen transformed into an open entertaining space with custom cabinetry.",
-      audience: "residential" as const,
-      categories: ["Kitchens & Baths"],
-      city: "Roswell, GA",
-      year: 2025,
-      durationWeeks: 6,
-      valueRange: "$38K – $52K",
-      heroImage:
-        images.kitchen,
-      beforeImage:
-        images.kitchenBefore,
-      afterImage:
-        images.kitchen,
-      scopeOfWork: [
-        "Wall removal and structural beam",
-        "Semi-custom shaker cabinets",
-        "Quartz waterfall island",
-        "New LVP flooring throughout main level",
-      ],
-    },
-    {
-      slug: "municipal-sewer-rehab",
-      title: "Municipal Sewer Main Rehabilitation",
-      summary: "Emergency sanitary sewer main repair for a metro Atlanta water authority — experience showcase.",
-      audience: "municipal" as const,
-      categories: ["Underground Utilities"],
-      city: "Metro Atlanta, GA",
-      year: 2022,
-      durationWeeks: 3,
-      heroImage:
-        images.industrial,
-      scopeOfWork: [
-        "24/7 emergency mobilization",
-        "Excavation and pipe replacement on 12\" sanitary main",
-        "Traffic control and public safety coordination",
-        "Restoration and compaction testing",
-      ],
-      challenge: "Active line failure during peak hours with minimal service disruption window.",
-      solution:
-        "Phased bypass and night-shift excavation completed repairs ahead of the authority's 72-hour deadline.",
-    },
-    {
-      slug: "commercial-pad-site",
-      title: "Commercial Pad Site Utilities",
-      summary: "Wet utility installation for a new retail pad — storm, sanitary, and water service.",
-      audience: "commercial" as const,
-      categories: ["Underground Utilities"],
-      city: "Norcross, GA",
-      year: 2024,
-      durationWeeks: 5,
-      valueRange: "$120K – $180K",
-      heroImage:
-        images.heroConstruction,
-      scopeOfWork: [
-        "Storm drainage system with detention tie-in",
-        "Sanitary sewer lateral and grease interceptor",
-        "Water service and fire line coordination",
-        "As-built documentation for GC turnover",
-      ],
-    },
-    {
-      slug: "master-bath-spa",
-      title: "Master Bath Spa Retreat",
-      summary: "Down-to-the-studs bathroom renovation with walk-in shower, heated floors, and double vanity.",
-      audience: "residential" as const,
-      categories: ["Kitchens & Baths"],
-      city: "Decatur, GA",
-      year: 2025,
-      durationWeeks: 4,
-      valueRange: "$28K – $42K",
-      heroImage:
-        images.bathroom,
-      beforeImage:
-        images.bathroomBefore,
-      afterImage:
-        images.bathroom,
-      scopeOfWork: [
-        "Custom tile walk-in shower with frameless glass",
-        "Heated porcelain floor",
-        "Double vanity with quartz tops",
-        "All permits and inspections",
-      ],
-    },
-  ],
-  es: [
-    {
-      slug: "whole-home-expansion-duluth",
-      title: "Ampliación de Vivienda Completa",
-      summary: "Duplicó el espacio habitable con una ampliación integrada a la estructura existente.",
-      audience: "residential" as const,
-      categories: ["Ampliaciones y Construcción Nueva"],
-      city: "Duluth, GA",
-      year: 2024,
-      durationWeeks: 14,
-      sizeSqFt: 1200,
-      valueRange: "$85K – $120K",
-      heroImage:
-        images.houseExterior,
-      beforeImage:
-        images.houseBefore,
-      afterImage:
-        images.houseExterior,
-      scopeOfWork: [
-        "Cimentación y estructura para ampliación de 1,200 pies²",
-        "Nueva distribución de cocina con encimeras de cuarzo",
-        "Actualización de panel eléctrico (electricista con licencia)",
-        "Permisos e inspecciones gestionados",
-      ],
-      challenge: "La casa original de 1978 tenía opciones limitadas de carga para un plano abierto.",
-      solution:
-        "La instalación de viga diseñada por ingeniero permitió eliminar un muro y transformar el área principal manteniendo coherencia visual.",
-    },
-    {
-      slug: "outdoor-kitchen-carport",
-      title: "Cocina Exterior y Cochera para 4 Autos",
-      summary: "Espacio exterior cubierto con cocina completa, techo y cochera para cuatro vehículos.",
-      audience: "residential" as const,
-      categories: ["Espacios Exteriores"],
-      city: "Lawrenceville, GA",
-      year: 2023,
-      durationWeeks: 8,
-      valueRange: "$45K – $65K",
-      heroImage:
-        images.outdoorLiving,
-      beforeImage:
-        images.outdoorBefore,
-      afterImage:
-        images.outdoorLiving,
-      scopeOfWork: [
-        "Estructura de cochera con postes de acero",
-        "Cocina exterior con fregadero, gas y encimeras de piedra",
-        "Techo de cedro e iluminación LED",
-        "Drenaje y patio de adoquines",
-      ],
-    },
-    {
-      slug: "kitchen-remodel-roswell",
-      title: "Remodelación de Cocina — Concepto Abierto",
-      summary: "Cocina en galera transformada en espacio abierto para entretenimiento con gabinetes personalizados.",
-      audience: "residential" as const,
-      categories: ["Cocinas y Baños"],
-      city: "Roswell, GA",
-      year: 2025,
-      durationWeeks: 6,
-      valueRange: "$38K – $52K",
-      heroImage:
-        images.kitchen,
-      beforeImage:
-        images.kitchenBefore,
-      afterImage:
-        images.kitchen,
-      scopeOfWork: [
-        "Eliminación de muro y viga estructural",
-        "Gabinetes shaker semi-personalizados",
-        "Isla de cuarzo con cascada",
-        "Piso LVP en todo el nivel principal",
-      ],
-    },
-    {
-      slug: "municipal-sewer-rehab",
-      title: "Rehabilitación de Alcantarillado Municipal",
-      summary: "Reparación de emergencia de alcantarillado sanitario para autoridad de agua del área metropolitana.",
-      audience: "municipal" as const,
-      categories: ["Servicios Subterráneos"],
-      city: "Área Metropolitana de Atlanta, GA",
-      year: 2022,
-      durationWeeks: 3,
-      heroImage:
-        images.industrial,
-      scopeOfWork: [
-        "Movilización de emergencia 24/7",
-        "Excavación y reemplazo de tubería de 12\"",
-        "Control de tráfico y seguridad pública",
-        "Restauración y pruebas de compactación",
-      ],
-      challenge: "Falla activa en horas pico con ventana mínima de interrupción.",
-      solution:
-        "Bypass por fases y excavación nocturna completaron las reparaciones antes del plazo de 72 horas.",
-    },
-    {
-      slug: "commercial-pad-site",
-      title: "Servicios Subterráneos para Sitio Comercial",
-      summary: "Instalación de servicios húmedos para nuevo local comercial — tormenta, sanitario y agua.",
-      audience: "commercial" as const,
-      categories: ["Servicios Subterráneos"],
-      city: "Norcross, GA",
-      year: 2024,
-      durationWeeks: 5,
-      valueRange: "$120K – $180K",
-      heroImage:
-        images.heroConstruction,
-      scopeOfWork: [
-        "Sistema de drenaje pluvial con detención",
-        "Lateral sanitario e interceptor de grasa",
-        "Servicio de agua y coordinación de línea contra incendios",
-        "Documentación as-built para entrega al GC",
-      ],
-    },
-    {
-      slug: "master-bath-spa",
-      title: "Baño Principal Estilo Spa",
-      summary: "Renovación completa con ducha walk-in, pisos con calefacción y doble lavabo.",
-      audience: "residential" as const,
-      categories: ["Cocinas y Baños"],
-      city: "Decatur, GA",
-      year: 2025,
-      durationWeeks: 4,
-      valueRange: "$28K – $42K",
-      heroImage:
-        images.bathroom,
-      beforeImage:
-        images.bathroomBefore,
-      afterImage:
-        images.bathroom,
-      scopeOfWork: [
-        "Ducha walk-in con azulejo personalizado y vidrio sin marco",
-        "Piso de porcelanato con calefacción",
-        "Doble lavabo con tops de cuarzo",
-        "Todos los permisos e inspecciones",
-      ],
-    },
-  ],
-};
+const en = [
+  {
+    slug: "dallas-water-main",
+    title: "Water Main & Valve Assembly",
+    summary:
+      "Blue PVC water main installation with gate valves and a manifold tie-in at a new development site in Dallas.",
+    audience: "commercial" as const,
+    categories: ["Water Main"],
+    city: "Dallas, GA",
+    year: 2026,
+    month: 8,
+    heroImage: images.projects.dallasWaterMain,
+  },
+  {
+    slug: "woodstock-pvc-manhole",
+    title: "PVC Line to Manhole Connection",
+    summary:
+      "Sanitary or water service line set in a deep trench with gravel bedding and a manhole connection on Mill Street.",
+    audience: "commercial" as const,
+    categories: ["Sanitary Sewer · Water"],
+    city: "Woodstock, GA",
+    year: 2026,
+    month: 7,
+    heroImage: images.projects.woodstockPvcManhole,
+  },
+  {
+    slug: "atlanta-mlk-utility-vaults",
+    title: "Parallel Mains to Concrete Vaults",
+    summary:
+      "Twin utility mains run through red-clay trenching to precast concrete vault structures along MLK Jr Drive.",
+    audience: "municipal" as const,
+    categories: ["Storm · Sanitary"],
+    city: "Atlanta, GA",
+    year: 2026,
+    month: 5,
+    heroImage: images.projects.atlantaMlkVaultMains,
+  },
+  {
+    slug: "atlanta-mlk-water-main",
+    title: "Ductile Iron Water Main",
+    summary:
+      "Black ductile iron water line with red gate valves, mechanical joints, and a precast flow vault on MLK Jr Drive.",
+    audience: "municipal" as const,
+    categories: ["Water Main"],
+    city: "Atlanta, GA",
+    year: 2026,
+    month: 5,
+    heroImage: images.projects.atlantaMlkWaterMain,
+  },
+  {
+    slug: "atlanta-avondale-cement-pipe",
+    title: "Large-Diameter Concrete Pipe Install",
+    summary:
+      "Reinforced concrete pipe placed in a wide trench for storm or sanitary collection near new townhome construction.",
+    audience: "commercial" as const,
+    categories: ["Storm Drainage · Sanitary Sewer"],
+    city: "Atlanta, GA",
+    year: 2024,
+    month: 12,
+    heroImage: images.projects.atlantaAvondaleCementPipe,
+  },
+  {
+    slug: "oakwood-corrugated-storm",
+    title: "Corrugated Metal Storm Line",
+    summary:
+      "Multiple large CMP storm pipes set on stone bedding with geotextile fabric at a highway corridor job in Oakwood.",
+    audience: "commercial" as const,
+    categories: ["Storm Drainage"],
+    city: "Oakwood, GA",
+    year: 2024,
+    month: 3,
+    heroImage: images.projects.oakwoodCorrugatedStorm,
+  },
+];
+
+const es = [
+  {
+    slug: "dallas-water-main",
+    title: "Línea de Agua y Válvulas",
+    summary:
+      "Instalación de línea de agua PVC con válvulas de compuerta y conexión de colector en un nuevo desarrollo en Dallas.",
+    audience: "commercial" as const,
+    categories: ["Línea de Agua"],
+    city: "Dallas, GA",
+    year: 2026,
+    month: 8,
+    heroImage: images.projects.dallasWaterMain,
+  },
+  {
+    slug: "woodstock-pvc-manhole",
+    title: "Línea PVC a Pozo de Visita",
+    summary:
+      "Línea de servicio sanitaria o de agua en zanja profunda con base de grava y conexión a pozo de visita en Mill Street.",
+    audience: "commercial" as const,
+    categories: ["Alcantarillado · Agua"],
+    city: "Woodstock, GA",
+    year: 2026,
+    month: 7,
+    heroImage: images.projects.woodstockPvcManhole,
+  },
+  {
+    slug: "atlanta-mlk-utility-vaults",
+    title: "Líneas Paralelas a Bóvedas de Concreto",
+    summary:
+      "Líneas de servicio gemelas instaladas en zanja de arcilla roja hacia estructuras de concreto prefabricado en MLK Jr Drive.",
+    audience: "municipal" as const,
+    categories: ["Tormenta · Sanitario"],
+    city: "Atlanta, GA",
+    year: 2026,
+    month: 5,
+    heroImage: images.projects.atlantaMlkVaultMains,
+  },
+  {
+    slug: "atlanta-mlk-water-main",
+    title: "Línea de Agua de Hierro Dúctil",
+    summary:
+      "Línea de agua de hierro dúctil con válvulas rojas, juntas mecánicas y bóveda de flujo prefabricada en MLK Jr Drive.",
+    audience: "municipal" as const,
+    categories: ["Línea de Agua"],
+    city: "Atlanta, GA",
+    year: 2026,
+    month: 5,
+    heroImage: images.projects.atlantaMlkWaterMain,
+  },
+  {
+    slug: "atlanta-avondale-cement-pipe",
+    title: "Tubería de Concreto de Gran Diámetro",
+    summary:
+      "Tubería de concreto reforzado colocada en zanja amplia para recolección pluvial o sanitaria cerca de nuevas viviendas.",
+    audience: "commercial" as const,
+    categories: ["Drenaje Pluvial · Alcantarillado"],
+    city: "Atlanta, GA",
+    year: 2024,
+    month: 12,
+    heroImage: images.projects.atlantaAvondaleCementPipe,
+  },
+  {
+    slug: "oakwood-corrugated-storm",
+    title: "Línea de Tormenta CMP",
+    summary:
+      "Múltiples tuberías pluviales CMP de gran tamaño sobre base de piedra con geotextil en un corredor de carretera en Oakwood.",
+    audience: "commercial" as const,
+    categories: ["Drenaje Pluvial"],
+    city: "Oakwood, GA",
+    year: 2024,
+    month: 3,
+    heroImage: images.projects.oakwoodCorrugatedStorm,
+  },
+];
+
+export const projects = { en, es };

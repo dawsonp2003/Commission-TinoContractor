@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { headers } from "next/headers";
 import { DM_Sans, Fraunces } from "next/font/google";
-import { isLocale } from "@/lib/i18n/config";
+import { SetHtmlLang } from "@/components/SetHtmlLang";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -16,21 +15,20 @@ const fraunces = Fraunces({
 
 export const metadata: Metadata = {
   title: {
-    default: "Gutierrez Built LLC | Metro Atlanta Contractor",
-    template: "%s | Gutierrez Built LLC",
+    default: "TGR Utility Subcontractor LLC | Wet Utility Subcontractor",
+    template: "%s | TGR Utility Subcontractor LLC",
   },
   description:
-    "Licensed metro Atlanta contractor for residential remodels, commercial builds, and underground utility work. Bilingual service.",
+    "Tino Gutierrez — Underground Wet Utility Subcontractor for general contractors in west Georgia and metro Atlanta. Sanitary, storm, and water. Bilingual EN/ES.",
 };
 
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const h = await headers();
-  const localeHeader = h.get("x-locale");
-  const lang = localeHeader && isLocale(localeHeader) ? localeHeader : "en";
-
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang={lang} className={`${dmSans.variable} ${fraunces.variable} h-full`}>
-      <body className="min-h-full flex flex-col font-sans antialiased">{children}</body>
+    <html lang="en" className={`${dmSans.variable} ${fraunces.variable} h-full`}>
+      <body className="min-h-full flex flex-col font-sans antialiased">
+        <SetHtmlLang />
+        {children}
+      </body>
     </html>
   );
 }

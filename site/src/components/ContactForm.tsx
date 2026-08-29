@@ -56,6 +56,28 @@ export function ContactForm({ locale }: Props) {
         </div>
         <div>
           <label className="mb-1 block text-sm font-medium text-slate-700">
+            {contact.company}
+          </label>
+          <input
+            name="company"
+            className="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm focus:border-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-200"
+          />
+        </div>
+      </div>
+      <div className="grid gap-4 sm:grid-cols-2">
+        <div>
+          <label className="mb-1 block text-sm font-medium text-slate-700">
+            {contact.email}
+          </label>
+          <input
+            name="email"
+            type="email"
+            required
+            className="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm focus:border-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-200"
+          />
+        </div>
+        <div>
+          <label className="mb-1 block text-sm font-medium text-slate-700">
             {contact.phone}
           </label>
           <input
@@ -64,29 +86,6 @@ export function ContactForm({ locale }: Props) {
             className="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm focus:border-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-200"
           />
         </div>
-      </div>
-      <div>
-        <label className="mb-1 block text-sm font-medium text-slate-700">
-          {contact.email}
-        </label>
-        <input
-          name="email"
-          type="email"
-          required
-          className="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm focus:border-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-200"
-        />
-      </div>
-      <div>
-        <label className="mb-1 block text-sm font-medium text-slate-700">
-          {contact.audience}
-        </label>
-        <select
-          name="audience"
-          className="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm focus:border-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-200"
-        >
-          <option value="homeowner">{contact.audienceHome}</option>
-          <option value="commercial">{contact.audienceCommercial}</option>
-        </select>
       </div>
       <div>
         <label className="mb-1 block text-sm font-medium text-slate-700">

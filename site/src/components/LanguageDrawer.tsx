@@ -92,7 +92,7 @@ export function LanguageDrawer() {
 
   return (
     <div
-      className="fixed right-0 top-[30%] z-[100] flex items-center"
+      className="fixed bottom-20 right-0 z-[100] flex items-center md:bottom-auto md:top-[30%]"
       role="region"
       aria-label="Language preference"
     >
@@ -132,18 +132,19 @@ export function LanguageDrawer() {
         aria-label={open ? "Hide language options" : "Show language options"}
         title="Language / Idioma"
         className={cn(
-          "relative -ml-px flex h-[4.75rem] w-[1.125rem] shrink-0 items-center justify-center",
+          "relative -ml-px flex shrink-0 items-center justify-center",
+          "h-[5.5rem] w-9 md:h-[4.75rem] md:w-[1.375rem]",
           "rounded-l-full bg-amber-600 shadow-lg shadow-amber-900/20",
           "transition-colors hover:bg-amber-700 active:bg-amber-800",
           open && "bg-amber-700",
         )}
       >
         <span
-          className="flex flex-col items-center gap-1 text-[8px] font-bold leading-none tracking-wide"
+          className="flex flex-col items-center gap-1 text-[9px] font-bold leading-none tracking-wide md:text-[8px]"
           aria-hidden
         >
           <span className={cn(locale === "en" ? "text-white" : "text-white/35")}>EN</span>
-          <span className="h-px w-2.5 bg-white/40" />
+          <span className="h-px w-3 bg-white/40 md:w-2.5" />
           <span className={cn(locale === "es" ? "text-white" : "text-white/35")}>ES</span>
         </span>
       </button>
