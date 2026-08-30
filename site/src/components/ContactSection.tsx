@@ -68,7 +68,7 @@ export function ContactSection({ locale, config, title, subtitle }: Props) {
               <ServiceAreaTags cities={config.serviceAreaCities} />
             </div>
           </div>
-          <div>
+          <div id="contact-form" className="scroll-mt-28">
             <h3 className="text-xl font-semibold text-slate-900">
               {isEs ? "Formulario Rápido" : "Quick Form"}
             </h3>

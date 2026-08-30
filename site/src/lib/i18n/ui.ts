@@ -30,7 +30,7 @@ export const ui = {
     about: {
       title: "About Tino",
       p1: "Tino Gutierrez has 25 years of experience in underground utility work across west Georgia and metro Atlanta.",
-      p2: "He spent 19 years as an equipment operator with Brent, one of the region's largest utility contractors, working on sanitary sewer, storm, and water systems. He then spent 6 years as a foreman, leading field crews on commercial and municipal sites.",
+      p2: "He spent 19 years as an equipment operator with Brent Scarbrough & Company, Inc., one of the region's largest utility contractors, working on sanitary sewer, storm, and water systems. He then spent 6 years as a foreman, leading field crews on commercial and municipal sites.",
       p3: "He formed TGR Utility Subcontractor LLC to subcontract underground utility installation and repair for general contractors.",
       p4: "A Hispanic, family-oriented father of four, Tino brings the same dedication to every job site. He speaks English and Spanish fluently — clear communication with crews, superintendents, and GCs.",
     },
@@ -93,7 +93,7 @@ export const ui = {
     about: {
       title: "Sobre Tino",
       p1: "Tino Gutierrez tiene 25 años de experiencia en servicios públicos subterráneos en el oeste de Georgia y el área metropolitana de Atlanta.",
-      p2: "Pasó 19 años como operador de equipo con Brent, una de las compañías de servicios más grandes de la región, trabajando en alcantarillado sanitario, tormenta y agua. Después pasó 6 años como capataz, liderando cuadrillas en sitios comerciales y municipales.",
+      p2: "Pasó 19 años como operador de equipo con Brent Scarbrough & Company, Inc., una de las compañías de servicios más grandes de la región, trabajando en alcantarillado sanitario, tormenta y agua. Después pasó 6 años como capataz, liderando cuadrillas en sitios comerciales y municipales.",
       p3: "Formó TGR Utility Subcontractor LLC para subcontratar instalación y reparación de servicios subterráneos para contratistas generales.",
       p4: "Padre hispano de cuatro hijos, orientado a la familia, Tino lleva la misma dedicación a cada sitio de trabajo. Habla inglés y español con fluidez — comunicación clara con cuadrillas, superintendentes y CG.",
     },

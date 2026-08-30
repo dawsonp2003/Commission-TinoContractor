@@ -3,7 +3,7 @@
 import { createPortal } from "react-dom";
 import { useEffect, useState } from "react";
 import { Phone, MessageCircle } from "lucide-react";
-import { sectionHref } from "@/lib/sections";
+import { sectionHref, contactFormHref } from "@/lib/sections";
 import { useLocale } from "@/lib/i18n/use-locale";
 import { getUi } from "@/lib/i18n/ui";
 import { siteConfig } from "@/data/site-config";
@@ -95,7 +95,7 @@ export function MobileCallBar() {
         {ui.cta.text}
       </a>
       <a
-        href={sectionHref(locale, "contact")}
+        href={contactFormHref(locale)}
         className="flex flex-col items-center gap-1 py-3 text-xs font-semibold text-amber-700"
       >
         <span className="flex h-5 w-5 items-center justify-center rounded-full bg-amber-600 text-[10px] text-white">
