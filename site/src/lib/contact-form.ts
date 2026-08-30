@@ -1,4 +1,3 @@
-// Web3Forms delivers to the email registered with your access key (use Tino's inbox).
 export async function translateText(
   text: string,
   from: "en" | "es",
@@ -17,7 +16,7 @@ export async function translateText(
   }
 }
 
-type ContactPayload = {
+export type ContactPayload = {
   name: string;
   company?: string;
   email: string;
@@ -37,7 +36,6 @@ export async function buildBilingualEmail(payload: ContactPayload): Promise<stri
     email: "Email",
     phone: "Phone",
     message: "Message",
-    original: "Original (English)",
     translation: "Translation (Spanish)",
   };
   const esLabels = {
@@ -46,7 +44,6 @@ export async function buildBilingualEmail(payload: ContactPayload): Promise<stri
     email: "Correo",
     phone: "Teléfono",
     message: "Mensaje",
-    original: "Original (Español)",
     translation: "Traducción (Inglés)",
   };
 
@@ -72,14 +69,14 @@ export async function buildBilingualEmail(payload: ContactPayload): Promise<stri
   ].join("\n");
 }
 
-export async function sendContactEmail(payload: ContactPayload): Promise<void> {
-  const body = await buildBilingualEmail(payload);
-  const subject = `Job Inquiry from ${payload.name}${payload.company ? ` (${payload.company})` : ""}`;
-
-  const accessKey = process.env.WEB3FORMS_ACCESS_KEY;
+export async function submitContactForm(payload: ContactPayload): Promise<void> {
+  const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
   if (!accessKey) {
-    throw new Error("WEB3FORMS_ACCESS_KEY is not configured");
+    throw new Error("NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY is not configured");
   }
+
+  const message = await buildBilingualEmail(payload);
+  const subject = `Job Inquiry from ${payload.name}${payload.company ? ` (${payload.company})` : ""}`;
 
   const res = await fetch("https://api.web3forms.com/submit", {
     method: "POST",
@@ -89,7 +86,7 @@ export async function sendContactEmail(payload: ContactPayload): Promise<void> {
       subject,
       from_name: payload.name,
       email: payload.email,
-      message: body,
+      message,
     }),
   });
 

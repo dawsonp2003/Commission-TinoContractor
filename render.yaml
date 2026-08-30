@@ -1,12 +1,12 @@
 services:
   - type: web
     name: tino-contractor-demo
-    runtime: node
+    runtime: static
     rootDir: site
     buildCommand: npm ci && npm run build
-    startCommand: npm start
+    staticPublishPath: out
     envVars:
       - key: NODE_VERSION
         value: "20"
-      - key: WEB3FORMS_ACCESS_KEY
+      - key: NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY
         sync: false

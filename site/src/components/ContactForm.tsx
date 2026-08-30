@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { Locale } from "@/lib/i18n/config";
+import { submitContactForm } from "@/lib/contact-form";
 import { getUi } from "@/lib/i18n/ui";
 
 type Props = {
@@ -20,12 +21,14 @@ export function ContactForm({ locale }: Props) {
     const data = Object.fromEntries(new FormData(form));
 
     try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...data, locale }),
+      await submitContactForm({
+        name: String(data.name ?? ""),
+        company: data.company ? String(data.company) : undefined,
+        email: String(data.email ?? ""),
+        phone: data.phone ? String(data.phone) : undefined,
+        body: String(data.body ?? ""),
+        locale,
       });
-      if (!res.ok) throw new Error("Failed");
       setStatus("success");
       form.reset();
     } catch {
